@@ -1,0 +1,11 @@
+- 1 Aktion
+  - Attacke (Nah-/Fernkampf, Multiattacke, Ringen, Schupsen, Knockout)
+  - Zauber/Zaubertrick wirken
+  - Spurten (Dash), Helfen, Suchen
+  - Abrücken (Disengage)
+  - Verbergen/Verstecken oder in Deckung gehen
+  - Reaktion vorbereiten
+- 1 Bonusaktion
+- 1 Reaktion (1x pro Runde außerhalb des Kampfes)
+- 1 Interaktion/Freie Aktion
+- Bewegung

@@ -1,0 +1,1092 @@
+{
+  "name": "Dracaiya",
+  "calendar": {
+    "name": "Dracaiya",
+    "static_data": {
+      "year_data": {
+        "first_day": 1,
+        "overflow": true,
+        "global_week": [
+          "Vaj'nir",
+          "Ghuj'nir",
+          "Duj'nir",
+          "Dar'nir",
+          "Kol'nir",
+          "Vorox"
+        ],
+        "timespans": [
+          {
+            "name": "Jan'tir",
+            "type": "month",
+            "length": 32,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Froul",
+            "type": "month",
+            "length": 29,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Hil'lor",
+            "type": "month",
+            "length": 31,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Dragmen",
+            "type": "month",
+            "length": 33,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Joul",
+            "type": "month",
+            "length": 28,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Huj'nen",
+            "type": "month",
+            "length": 27,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Dalm",
+            "type": "month",
+            "length": 32,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Vortnix",
+            "type": "month",
+            "length": 28,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Drij'na",
+            "type": "month",
+            "length": 33,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Kha'uhl",
+            "type": "month",
+            "length": 32,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Dijni",
+            "type": "month",
+            "length": 29,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Norkh",
+            "type": "month",
+            "length": 33,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Voloss",
+            "type": "month",
+            "length": 36,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Quen",
+            "type": "month",
+            "length": 33,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Lij'na",
+            "type": "month",
+            "length": 30,
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Grij'na",
+            "type": "month",
+            "length": 30,
+            "interval": 1,
+            "offset": 0
+          }
+        ],
+        "leap_days": []
+      },
+      "moons": [
+        {
+          "name": "Aal'jur",
+          "cycle": 42,
+          "cycle_rounding": "round",
+          "shift": 0,
+          "granularity": 40,
+          "color": "#ffffff",
+          "shadow_color": "#292b4a",
+          "hidden": false
+        },
+        {
+          "name": "Jin'jur",
+          "cycle": 30,
+          "cycle_rounding": "round",
+          "shift": 0,
+          "granularity": 24,
+          "color": "#ffffff",
+          "shadow_color": "#292b4a",
+          "hidden": false
+        },
+        {
+          "name": "Z'jur",
+          "cycle": 10,
+          "cycle_rounding": "round",
+          "shift": 0,
+          "granularity": 8,
+          "color": "#ffffff",
+          "shadow_color": "#292b4a",
+          "hidden": false
+        }
+      ],
+      "clock": {
+        "enabled": true,
+        "render": true,
+        "hours": 24,
+        "minutes": 60,
+        "offset": 0,
+        "crowding": 0
+      },
+      "seasons": {
+        "data": [
+          {
+            "name": "Frühling",
+            "color": ["#979ce2", "#e5e5d8"],
+            "time": {
+              "sunrise": { "hour": 6, "minute": 0 },
+              "sunset": { "hour": 18, "minute": 0 }
+            },
+            "timespan": 2,
+            "day": 22,
+            "gradient": { "start": [236, 56.4, 73.9], "end": [60, 20, 87.3] }
+          },
+          {
+            "name": "Sommer",
+            "color": ["#e5e5d8", "#f5491c"],
+            "time": {
+              "sunrise": { "hour": 5, "minute": 0 },
+              "sunset": { "hour": 21, "minute": 0 }
+            },
+            "timespan": 6,
+            "day": 7,
+            "gradient": { "start": [60, 20, 87.3], "end": [12, 91.6, 53.5] }
+          },
+          {
+            "name": "Herbst",
+            "color": ["#f5491c", "#0bcfe9"],
+            "time": {
+              "sunrise": { "hour": 6, "minute": 0 },
+              "sunset": { "hour": 18, "minute": 0 }
+            },
+            "timespan": 10,
+            "day": 8,
+            "gradient": { "start": [12, 91.6, 53.5], "end": [187, 91, 47.8] }
+          },
+          {
+            "name": "Winter",
+            "color": ["#0bcfe9", "#979ce2"],
+            "time": {
+              "sunrise": { "hour": 9, "minute": 0 },
+              "sunset": { "hour": 16, "minute": 0 }
+            },
+            "timespan": 14,
+            "day": 6,
+            "gradient": { "start": [187, 91, 47.8], "end": [236, 56.4, 73.9] }
+          }
+        ],
+        "locations": [
+          {
+            "name": "Grazak Wüste",
+            "seasons": [
+              {
+                "time": {
+                  "sunrise": { "hour": 6, "minute": 0 },
+                  "sunset": { "hour": 18, "minute": 0 }
+                },
+                "weather": {
+                  "temp_low": 0,
+                  "temp_high": 0,
+                  "precipitation": 0,
+                  "precipitation_intensity": 0
+                }
+              },
+              {
+                "time": {
+                  "sunrise": { "hour": 5, "minute": 0 },
+                  "sunset": { "hour": 21, "minute": 0 }
+                },
+                "weather": {
+                  "temp_low": 0,
+                  "temp_high": 0,
+                  "precipitation": 0,
+                  "precipitation_intensity": 0
+                }
+              },
+              {
+                "time": {
+                  "sunrise": { "hour": 6, "minute": 0 },
+                  "sunset": { "hour": 18, "minute": 0 }
+                },
+                "weather": {
+                  "temp_low": 0,
+                  "temp_high": 0,
+                  "precipitation": 0,
+                  "precipitation_intensity": 0
+                }
+              },
+              {
+                "time": {
+                  "sunrise": { "hour": 9, "minute": 0 },
+                  "sunset": { "hour": 16, "minute": 0 }
+                },
+                "weather": {
+                  "temp_low": 0,
+                  "temp_high": 0,
+                  "precipitation": 0,
+                  "precipitation_intensity": 0
+                }
+              }
+            ],
+            "settings": {
+              "timezone": { "hour": 0, "minute": 0 },
+              "season_based_time": true,
+              "large_noise_frequency": 0.015,
+              "large_noise_amplitude": 5,
+              "medium_noise_frequency": 0.3,
+              "medium_noise_amplitude": 2,
+              "small_noise_frequency": 0.8,
+              "small_noise_amplitude": 3
+            }
+          }
+        ],
+        "global_settings": {
+          "season_offset": -9,
+          "weather_offset": 0,
+          "seed": 1669863513,
+          "temp_sys": "metric",
+          "wind_sys": "metric",
+          "cinematic": true,
+          "enable_weather": false,
+          "periodic_seasons": false,
+          "color_enabled": true,
+          "preset_order": [1, 2, 3, 0]
+        }
+      },
+      "eras": [
+        {
+          "name": "Ära der ewigen Ruhe",
+          "formatting": "Year {{year}} - {{era_name}}",
+          "description": "",
+          "settings": {
+            "use_custom_format": false,
+            "show_as_event": false,
+            "starting_era": false,
+            "event_category_id": null,
+            "ends_year": false,
+            "restart": false
+          },
+          "date": { "year": 7621, "timespan": 12, "day": 3, "epoch": 3779889 }
+        }
+      ],
+      "settings": {
+        "layout": "vertical",
+        "comments": "none",
+        "show_current_month": true,
+        "private": true,
+        "allow_view": true,
+        "only_backwards": true,
+        "only_reveal_today": false,
+        "hide_moons": false,
+        "hide_clock": false,
+        "hide_events": false,
+        "hide_eras": false,
+        "hide_all_weather": false,
+        "hide_future_weather": false,
+        "add_month_number": true,
+        "add_year_day_number": false,
+        "default_category": -1
+      },
+      "cycles": { "format": "", "data": [] }
+    },
+    "dynamic_data": {
+      "year": 7621,
+      "timespan": 12,
+      "day": 3,
+      "epoch": 3779889,
+      "custom_location": true,
+      "location": "0",
+      "hour": 2,
+      "minute": 0,
+      "current_era": 0
+    },
+    "events": [
+      {
+        "id": 2132095,
+        "name": "Tag der Neugeburt",
+        "data": {
+          "has_duration": false,
+          "duration": 1,
+          "show_first_last": false,
+          "limited_repeat": false,
+          "limited_repeat_num": 1,
+          "conditions": [["Month", "0", ["0"]], ["&&"], ["Day", "0", ["1"]]],
+          "connected_events": [],
+          "date": [],
+          "search_distance": 0,
+          "overrides": { "moons": [] }
+        },
+        "description": "<p>An diesem Tag wird das neue Jahr und damit das Schaffen des Universums gefeiert.</p>",
+        "event_category_id": "holiday",
+        "calendar_id": "dracaiya",
+        "settings": {
+          "color": "Dark-Solid",
+          "text": "text",
+          "hide": false,
+          "print": false
+        },
+        "created_at": "2023-12-24 08:16:03",
+        "updated_at": "2023-12-24 08:16:03",
+        "sort_by": 0,
+        "creator_id": 57858
+      }
+    ],
+    "categories": [
+      {
+        "name": "Holiday",
+        "calendar_id": "dracaiya",
+        "category_settings": { "hide": false, "player_usable": false },
+        "event_settings": {
+          "color": "Dark-Solid",
+          "text": "text",
+          "hide": false,
+          "print": false
+        },
+        "created_at": "2023-12-24 08:25:58",
+        "updated_at": "2023-12-24 08:25:58",
+        "sort_by": 0,
+        "id": "holiday"
+      }
+    ],
+    "currentDate": {
+      "year": 7621,
+      "month": 15,
+      "day": 3,
+      "hour": 10,
+      "minute": 0
+    }
+  },
+  "players": [
+    {
+      "name": "Asha",
+      "race": "Tabaxi",
+      "class": "Wild Mage Sourcerer",
+      "description": "She is an orphan and she always feared her magic and the consequences of it.",
+      "stats": {
+        "STR": "6",
+        "DEX": "16",
+        "CON": "14",
+        "INT": "11",
+        "WIS": "14",
+        "CHA": "18"
+      },
+      "images": {
+        "portrait": "characters/asha.png",
+        "keyed": {
+          "5": [
+            { "name": "", "path": "characters/5-Eyes.PNG" },
+            { "name": "Dragonshape", "path": "characters/5-Dragonshape.PNG" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Xala 'Glitteraxt' Juwell",
+      "class": "Totem Warrior Barbarian / Jeweler Artificer",
+      "description": "Adopted by two gnomes she learned the art of jewelry.",
+      "stats": {
+        "STR": "16",
+        "DEX": "18",
+        "CON": "16",
+        "INT": "13",
+        "WIS": "8",
+        "CHA": "11"
+      },
+      "images": {
+        "portrait": "characters/xala.png",
+        "keyed": { "1": [{ "name": "", "path": "characters/1.PNG" }] }
+      }
+    },
+    {
+      "name": "Eleonor",
+      "class": "Moon Druid",
+      "race": "Water Genasi",
+      "description": "Found by fishermen in the sea she has no memory of her past.",
+      "stats": {
+        "STR": "12",
+        "DEX": "14",
+        "CON": "20",
+        "INT": "14",
+        "WIS": "20",
+        "CHA": "8"
+      },
+      "images": {
+        "portrait": "characters/eleonor.png",
+        "keyed": {
+          "0": [{ "name": "Wildshape", "path": "characters/0-Wildshape.PNG" }],
+          "3": [{ "name": "", "path": "characters/3.PNG" }]
+        }
+      }
+    }
+  ],
+  "playerNPCs": [
+    {
+      "name": "Yri ad Fajen",
+      "npc": true,
+      "race": "Changeling",
+      "class": "Thaumaturgy Wizard",
+      "description": "Yri ad Fajen is a book lover and a master of the arcane arts.",
+      "statblock": {
+        "name": "Yri ad Fajen",
+        "saveVersion": 8,
+        "useArticleInToken": false,
+        "alphaTraits": true,
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "lawful good",
+        "languages": "Common, Old Orcish, Old Draconic, Elvish, Draconic",
+        "AC": 16,
+        "ACType": "Mage Armor",
+        "CR": 9,
+        "useCrDisplayOverride": false,
+        "crOverride": "",
+        "proficiency": 3,
+        "proficiencyOverride": false,
+        "HP": { "HD": 8, "type": 6, "modifier": 14 },
+        "hpModifierOverride": false,
+        "hpDieTypeOverride": true,
+        "stats": {
+          "STR": 7,
+          "DEX": 17,
+          "CON": 15,
+          "INT": 20,
+          "WIS": 10,
+          "CHA": 12
+        },
+        "saves": {
+          "STR": { "proficient": false, "override": false, "overrideValue": 0 },
+          "DEX": { "proficient": false, "override": false, "overrideValue": 0 },
+          "CON": { "proficient": false, "override": false, "overrideValue": 0 },
+          "INT": { "proficient": true, "override": false, "overrideValue": 0 },
+          "WIS": { "proficient": true, "override": false, "overrideValue": 0 },
+          "CHA": { "proficient": false, "override": false, "overrideValue": 0 }
+        },
+        "speeds": [
+          {
+            "id": "46d11d0f-b21c-4ad2-a518-65eaef443a63",
+            "type": "walk",
+            "speed": 30,
+            "note": ""
+          }
+        ],
+        "skills": [
+          {
+            "skill": { "stat": "INT", "label": "Arcana" },
+            "key": "ARCANA",
+            "proficient": true,
+            "expertise": false,
+            "override": false,
+            "overrideValue": 0
+          },
+          {
+            "skill": { "stat": "INT", "label": "History" },
+            "key": "HISTORY",
+            "proficient": true,
+            "expertise": false,
+            "override": false,
+            "overrideValue": 0
+          },
+          {
+            "skill": { "stat": "INT", "label": "Investigation" },
+            "key": "INVESTIGATION",
+            "proficient": true,
+            "expertise": false,
+            "override": false,
+            "overrideValue": 0
+          },
+          {
+            "skill": { "stat": "CHA", "label": "Performance" },
+            "key": "PERFORMANCE",
+            "proficient": true,
+            "expertise": false,
+            "override": false,
+            "overrideValue": 0
+          }
+        ],
+        "resistances": [],
+        "immunities": [],
+        "vulnerabilities": [],
+        "conditions": [],
+        "senses": {
+          "blindsight": 0,
+          "darkvision": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        },
+        "sensesNotes": "",
+        "passivePerception": { "override": false, "overrideValue": 0 },
+        "traits": [
+          {
+            "name": "Spellbook",
+            "id": "090267c3-9291-4b8f-a2b9-7ffc1f65fa1e",
+            "description": "You can learn spells from the wizard snd cleric spell lists from spell scrolls. Doing so requires 50gp per spell level.",
+            "limitedUse": { "count": 0, "rate": "DAY" },
+            "customPreamble": false,
+            "crAnnotation": {
+              "maxDamage": 0,
+              "maxSave": 0,
+              "maxModifier": 0,
+              "multitarget": false,
+              "ehpMultiplier": 1,
+              "ehpModifier": 0,
+              "acModifier": 0,
+              "include": true,
+              "automatic": true
+            }
+          }
+        ],
+        "spellcasting": {
+          "stat": "INT",
+          "save": { "override": false, "overrideValue": 0 },
+          "modifier": { "override": false, "overrideValue": 0 },
+          "attack": { "override": false, "overrideValue": 0 },
+          "class": "WIZARD",
+          "level": 7,
+          "slots": [4, 3, 3, 1, 0, 0, 0, 0, 0],
+          "atWill": [],
+          "standard": [
+            "Fire Bolt",
+            "Light",
+            "Prestidigitation",
+            "Thaumaturgy",
+            "Shocking Grasp",
+            "Spare the Dying",
+            "Bless",
+            "Cure Wounds",
+            "Guiding Bolt",
+            "Identify",
+            "Mage Armor",
+            "Shield",
+            "Magic Weapon",
+            "Scorching Ray",
+            "Zone of Truth",
+            "Magic Missile",
+            "Fireball",
+            "Remove Curse",
+            "Healing Word",
+            "Counterspell",
+            "Daylight",
+            "Fly",
+            "Darkvision",
+            "Comprehend Languages",
+            "Death Ward",
+            "Misty Step"
+          ],
+          "notes": "Note that her mage armor is always active.",
+          "atWillNotes": "",
+          "useCustomClassPreamble": false,
+          "customClassPreamble": "",
+          "useCustomInnatePreamble": false,
+          "customInnatePreamble": ""
+        },
+        "attacks": [
+          {
+            "id": "038340cf-d9e8-4fa0-9a80-c6c1f546937d",
+            "name": "Yris Staff",
+            "distance": "MELEE",
+            "kind": "WEAPON",
+            "modifier": {
+              "override": false,
+              "overrideValue": 0,
+              "stat": "STR",
+              "proficient": true
+            },
+            "range": { "standard": 20, "long": 60, "reach": 5 },
+            "targets": 1,
+            "damage": {
+              "dice": 8,
+              "count": 1,
+              "modifier": {
+                "override": false,
+                "overrideValue": 0,
+                "stat": "STR"
+              },
+              "type": "bludgeoning"
+            },
+            "alternateDamage": {
+              "dice": 6,
+              "count": 1,
+              "modifier": {
+                "override": false,
+                "overrideValue": 0,
+                "stat": "STR"
+              },
+              "type": "slashing",
+              "condition": "",
+              "active": false
+            },
+            "additionalDamage": [],
+            "save": 0,
+            "description": "",
+            "legendaryOnly": false,
+            "useCustomRenderer": false,
+            "customRenderer": ""
+          }
+        ],
+        "actions": [
+          {
+            "name": "Shapeshift",
+            "id": "d276cc73-7775-45b8-bc71-4f7f73f9e034",
+            "description": "You can change your appearance and voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can't duplicate the appearance of an individual you've never seen, and it must be a humanoid. Your clothing and equipment aren't changed by this trait.",
+            "recharge": "",
+            "limitedUse": { "count": 0, "rate": "DAY" },
+            "legendaryOnly": false,
+            "customPreamble": false,
+            "bonusAction": false,
+            "crAnnotation": {
+              "maxDamage": 0,
+              "maxSave": 0,
+              "maxModifier": 0,
+              "multitarget": false,
+              "ehpMultiplier": 1,
+              "ehpModifier": 0,
+              "acModifier": 0,
+              "include": true,
+              "automatic": true
+            }
+          }
+        ],
+        "multiattacks": [],
+        "multiattackOptions": {
+          "useCustomRenderer": false,
+          "customMultiattackRenderer": "",
+          "postscript": ""
+        },
+        "legendaryActions": {
+          "count": 0,
+          "actions": [],
+          "useCustomPreamble": false,
+          "customPreamble": ""
+        },
+        "mythicActions": {
+          "triggerName": "",
+          "triggerRecharge": "Recharges after a Short or Long Rest",
+          "triggerDescription": "If {NAME} would be reduced to 0 hit points, its current hit point total instead resets to {monster.hp} hit points. Additionally, the {NAME} can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional [x]XP ([x] XP total) for defeating the {}NAME} after this trait activates.",
+          "preamble": "If {NAME}'s mythic trait is active, it can use the options below as legendary actions.",
+          "actions": []
+        },
+        "reactions": [
+          {
+            "id": "6e8cf18e-121f-4119-b83d-612dac185875",
+            "name": "Shield",
+            "description": "Yris casts the Shield spell using a spell slot."
+          },
+          {
+            "id": "450473cf-8b46-4500-80dc-0d8d6d1a9a2a",
+            "name": "Counterspell",
+            "description": "Yris casts the Counterspell spell using a spellslot."
+          }
+        ],
+        "useCustomLairActionPreamble": false,
+        "lairActionPreamble": "",
+        "lairActions": [],
+        "regionalEffects": [],
+        "regionalEffectDescription": "",
+        "inventory": "Pocket Library, Enduring Spellbook, Shiftweave",
+        "autoEstimateDefenseCr": true
+      },
+      "images": {
+        "portrait": "characters/yri.png",
+        "keyed": { "2": [{ "name": "", "path": "characters/2.PNG" }] }
+      },
+      "background": "backgrounds/magic_forest.png",
+      "toolProficiencies": "",
+      "weaponProficiencies": "Quaterstaff, Dagger"
+    },
+    {
+      "name": "Leopolda Silberlied",
+      "npc": true,
+      "race": "Harengon",
+      "class": "Sword Bard",
+      "description": "Leopolda has a talent for music and passion for other people.",
+      "statblock": {
+        "name": "Leopolda Silberlied",
+        "saveVersion": 8,
+        "useArticleInToken": false,
+        "alphaTraits": true,
+        "size": "Medium",
+        "type": "humanoid",
+        "alignment": "chaotic neutral",
+        "languages": "Common",
+        "AC": 16,
+        "ACType": "chain shirt",
+        "CR": 9,
+        "useCrDisplayOverride": false,
+        "crOverride": "",
+        "proficiency": 3,
+        "proficiencyOverride": false,
+        "HP": { "HD": 8, "type": 8, "modifier": 14 },
+        "hpModifierOverride": false,
+        "hpDieTypeOverride": false,
+        "stats": {
+          "STR": 12,
+          "DEX": 16,
+          "CON": 14,
+          "INT": 10,
+          "WIS": 12,
+          "CHA": 20
+        },
+        "saves": {
+          "STR": { "proficient": false, "override": false, "overrideValue": 0 },
+          "DEX": { "proficient": true, "override": false, "overrideValue": 0 },
+          "CON": { "proficient": false, "override": false, "overrideValue": 0 },
+          "INT": { "proficient": false, "override": false, "overrideValue": 0 },
+          "WIS": { "proficient": false, "override": false, "overrideValue": 0 },
+          "CHA": { "proficient": true, "override": false, "overrideValue": 0 }
+        },
+        "speeds": [
+          {
+            "id": "bf80565b-2f26-44b7-932c-7df2d2e38e96",
+            "type": "walk",
+            "speed": 30,
+            "note": ""
+          }
+        ],
+        "skills": [
+          {
+            "skill": { "stat": "DEX", "label": "Acrobatics" },
+            "key": "ACROBATICS",
+            "proficient": true,
+            "expertise": true,
+            "override": false,
+            "overrideValue": 0
+          },
+          {
+            "skill": { "stat": "WIS", "label": "Perception" },
+            "key": "PERCEPTION",
+            "proficient": true,
+            "expertise": false,
+            "override": false,
+            "overrideValue": 0
+          },
+          {
+            "skill": { "stat": "CHA", "label": "Performance" },
+            "key": "PERFORMANCE",
+            "proficient": true,
+            "expertise": true,
+            "override": false,
+            "overrideValue": 0
+          },
+          {
+            "skill": { "stat": "WIS", "label": "Insight" },
+            "key": "INSIGHT",
+            "proficient": true,
+            "expertise": false,
+            "override": false,
+            "overrideValue": 0
+          }
+        ],
+        "resistances": [],
+        "immunities": [],
+        "vulnerabilities": [],
+        "conditions": [],
+        "senses": {
+          "blindsight": 0,
+          "darkvision": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        },
+        "sensesNotes": "",
+        "passivePerception": { "override": false, "overrideValue": 0 },
+        "traits": [
+          {
+            "name": "Hare-Trigger",
+            "id": "72e4ae66-3e69-49be-9155-d10cd3a3e927",
+            "description": "You can add your proficiency bonus to initiative rolls.",
+            "limitedUse": { "count": 0, "rate": "DAY" },
+            "customPreamble": false,
+            "crAnnotation": {
+              "maxDamage": 0,
+              "maxSave": 0,
+              "maxModifier": 0,
+              "multitarget": false,
+              "ehpMultiplier": 1,
+              "ehpModifier": 0,
+              "acModifier": 0,
+              "include": true,
+              "automatic": true
+            }
+          },
+          {
+            "name": "Song of Rest",
+            "id": "c25bd958-2ea2-4417-a218-c79edbd70db8",
+            "description": "Once per long rest you can inspire your party with a resting song during a short rest. This allows them to add a d6 to one of their hit dice.",
+            "limitedUse": { "count": 0, "rate": "DAY" },
+            "customPreamble": false,
+            "crAnnotation": {
+              "maxDamage": 0,
+              "maxSave": 0,
+              "maxModifier": 0,
+              "multitarget": false,
+              "ehpMultiplier": 1,
+              "ehpModifier": 0,
+              "acModifier": 0,
+              "include": true,
+              "automatic": true
+            }
+          }
+        ],
+        "spellcasting": {
+          "stat": "CHA",
+          "save": { "override": false, "overrideValue": 0 },
+          "modifier": { "override": false, "overrideValue": 0 },
+          "attack": { "override": false, "overrideValue": 0 },
+          "class": "BARD",
+          "level": 7,
+          "slots": [4, 3, 3, 1, 0, 0, 0, 0, 0],
+          "atWill": [],
+          "standard": [
+            "Fire Bolt",
+            "Prestidigitation",
+            "Charm Person",
+            "Cure Wounds",
+            "Silent Image",
+            "Sleep",
+            "Hideous Laughter",
+            "Vicious Mockery",
+            "Detect Thoughts",
+            "Heat Metal",
+            "Knock",
+            "Fear",
+            "Thunderwave",
+            "Sending",
+            "Leomund's Tiny Hut",
+            "Healing Word",
+            "Mass Healing Word"
+          ],
+          "notes": "",
+          "atWillNotes": "",
+          "useCustomClassPreamble": false,
+          "customClassPreamble": "",
+          "useCustomInnatePreamble": false,
+          "customInnatePreamble": ""
+        },
+        "attacks": [
+          {
+            "id": "7047b41b-74de-4173-93f0-298125e772c6",
+            "name": "Dagger",
+            "distance": "BOTH",
+            "kind": "WEAPON",
+            "modifier": {
+              "override": false,
+              "overrideValue": 0,
+              "stat": "STR",
+              "proficient": true
+            },
+            "range": { "standard": 20, "long": 60, "reach": 5 },
+            "targets": 1,
+            "damage": {
+              "dice": 4,
+              "count": 1,
+              "modifier": {
+                "override": false,
+                "overrideValue": 0,
+                "stat": "STR"
+              },
+              "type": "piercing"
+            },
+            "alternateDamage": {
+              "dice": 6,
+              "count": 1,
+              "modifier": {
+                "override": false,
+                "overrideValue": 0,
+                "stat": "STR"
+              },
+              "type": "slashing",
+              "condition": "",
+              "active": false
+            },
+            "additionalDamage": [],
+            "save": 0,
+            "description": "",
+            "legendaryOnly": false,
+            "useCustomRenderer": false,
+            "customRenderer": ""
+          },
+          {
+            "id": "7047b41b-74de-4173-93f0-298125e772c6",
+            "name": "Psychic Whip",
+            "distance": "MELEE",
+            "kind": "WEAPON",
+            "modifier": {
+              "override": false,
+              "overrideValue": 0,
+              "stat": "DEX",
+              "proficient": true
+            },
+            "range": { "standard": 20, "long": 60, "reach": 10 },
+            "targets": 1,
+            "damage": {
+              "dice": 4,
+              "count": 1,
+              "modifier": {
+                "override": false,
+                "overrideValue": 0,
+                "stat": "DEX"
+              },
+              "type": "slashing"
+            },
+            "alternateDamage": {
+              "dice": 6,
+              "count": 1,
+              "modifier": {
+                "override": false,
+                "overrideValue": 0,
+                "stat": "STR"
+              },
+              "type": "slashing",
+              "condition": "",
+              "active": false
+            },
+            "additionalDamage": [
+              {
+                "dice": 6,
+                "count": 1,
+                "type": "psychic",
+                "condition": "",
+                "active": false
+              }
+            ],
+            "save": 0,
+            "description": "",
+            "legendaryOnly": false,
+            "useCustomRenderer": false,
+            "customRenderer": ""
+          }
+        ],
+        "actions": [
+          {
+            "name": "Bardic Inspiration",
+            "id": "06605e84-76bf-49e1-8e5a-5b8b8d9ac698",
+            "description": "You can inspire a creature granting it a&nbsp;<b>d8</b>, which can be added to any d20 roll. You can use this feature a number of times equal to your charisma modifier. Once you short rest you regain these usages.",
+            "recharge": "",
+            "limitedUse": { "count": 0, "rate": "DAY" },
+            "legendaryOnly": false,
+            "customPreamble": false,
+            "bonusAction": true,
+            "crAnnotation": {
+              "maxDamage": 0,
+              "maxSave": 0,
+              "maxModifier": 0,
+              "multitarget": false,
+              "ehpMultiplier": 1,
+              "ehpModifier": 0,
+              "acModifier": 0,
+              "include": true,
+              "automatic": true
+            }
+          },
+          {
+            "name": "Multiattack",
+            "id": "06605e84-76bf-49e1-8e5a-5b8b8d9ac698",
+            "description": "Leopolda makes two weapon attacks.",
+            "recharge": "",
+            "limitedUse": { "count": 0, "rate": "DAY" },
+            "legendaryOnly": false,
+            "customPreamble": false,
+            "bonusAction": true,
+            "crAnnotation": {
+              "maxDamage": 0,
+              "maxSave": 0,
+              "maxModifier": 0,
+              "multitarget": false,
+              "ehpMultiplier": 1,
+              "ehpModifier": 0,
+              "acModifier": 0,
+              "include": true,
+              "automatic": true
+            }
+          }
+        ],
+        "multiattacks": [],
+        "multiattackOptions": {
+          "useCustomRenderer": false,
+          "customMultiattackRenderer": "",
+          "postscript": ""
+        },
+        "legendaryActions": {
+          "count": 0,
+          "actions": [],
+          "useCustomPreamble": false,
+          "customPreamble": ""
+        },
+        "mythicActions": {
+          "triggerName": "",
+          "triggerRecharge": "Recharges after a Short or Long Rest",
+          "triggerDescription": "If {NAME} would be reduced to 0 hit points, its current hit point total instead resets to {monster.hp} hit points. Additionally, the {NAME} can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional [x]XP ([x] XP total) for defeating the {}NAME} after this trait activates.",
+          "preamble": "If {NAME}'s mythic trait is active, it can use the options below as legendary actions.",
+          "actions": []
+        },
+        "reactions": [],
+        "useCustomLairActionPreamble": false,
+        "lairActionPreamble": "",
+        "lairActions": [],
+        "regionalEffects": [],
+        "regionalEffectDescription": "",
+        "inventory": "",
+        "autoEstimateDefenseCr": true
+      },
+      "images": {
+        "portrait": "characters/leopolda.png",
+        "keyed": { "4": [{ "name": "", "path": "characters/4.PNG" }] }
+      },
+      "background": "backgrounds/town.png",
+      "toolProficiencies": "Voice, Piano, Flute, Lute, Thieves' Tools",
+      "weaponProficiencies": "Simple, Whips"
+    }
+  ],
+  "map": { "image": "map.png", "heroPath": "map.svg" },
+  "displayData": {
+    "foregroundActives": {
+      "Asha": "characters/5-Dragonshape.PNG",
+      "Xala 'Glitteraxt' Juwell": "characters/1.PNG",
+      "Eleonor": "characters/3.PNG",
+      "Yri ad Fajen": "characters/2.PNG",
+      "Leopolda Silberlied": "characters/4.PNG"
+    },
+    "backgroundIndex": 9
+  }
+}

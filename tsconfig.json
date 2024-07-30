@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "#/*": ["./data/*"],
+      "src/*": ["./node_modules/5e-monster-maker/src/*"],
+      "app/*": ["./node_modules/5e-monster-maker/*"],
+      "components/*": ["./node_modules/5e-monster-maker/src/components/*"],
+      "layouts/*": ["./node_modules/5e-monster-maker/src/layouts/*"],
+      "pages/*": ["./node_modules/5e-monster-maker/src/pages/*"],
+      "assets/*": ["./node_modules/5e-monster-maker/src/assets/*"],
+      "boot/*": ["./node_modules/5e-monster-maker/src/boot/*"],
+      "stores/*": ["./node_modules/5e-monster-maker/src/stores/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "scripts/create-schema.mjs",
+    "scripts/create-types-schema.ts"
+  ],
+  "exclude": ["node_modules"]
+}

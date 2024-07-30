@@ -1,0 +1,17 @@
+export enum Environment {
+  Any = "any",
+  Arctic = "arctic",
+  Badlands = "badlands",
+  Coastal = "coastal",
+  Desert = "desert",
+  Farmland = "farmland",
+  Forest = "forest",
+  Grassland = "grassland",
+  Hill = "hill",
+  Mountain = "mountain",
+  Planar = "planar",
+  Swamp = "swamp",
+  Underdark = "underdark",
+  Underwater = "underwater",
+  Urban = "urban",
+}
