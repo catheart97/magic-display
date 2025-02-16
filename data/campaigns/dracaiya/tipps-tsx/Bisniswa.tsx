@@ -1,46 +1,43 @@
-import Ship from "./ship.svg";
+import Ship from "./Ship.png";
 
 export default () => {
   return (
     <>
-      <div className="relative h-full grow">
-        <img
-          src={Ship.src}
-          className="h-full w-full object-contain opacity-20"
-        />
+      <div className="h-full grow relative">
+        <img src={Ship.src} className="object-contain w-full h-full" />
         <div className="absolute inset-0 flex flex-col">
-          <div className="grid w-full grow grid-cols-2 gap-16">
-            <div className="grid grid-rows-4 gap-4 p-3">
-              <div className="ml-auto flex w-4/5 items-center justify-center rounded-xl border-2 border-black bg-white/50">
+          <div className="grow w-full grid grid-cols-2 gap-16">
+            <div className="grid grid-rows-4 p-3 gap-4">
+              <div className="w-4/5 flex justify-center items-center rounded-xl bg-white/50 ml-auto border-2 border-black">
                 Waffenkammer
               </div>
-              <div className="row-span-2 flex w-4/5 items-center justify-center rounded-xl border-2 border-black bg-white/50">
+              <div className="row-span-2 w-4/5 rounded-xl bg-white/50 flex justify-center items-center border-2 border-black">
                 - 2 -
               </div>
-              <div className="ml-auto flex w-4/5 items-center justify-center rounded-xl border-2 border-black bg-white/50">
+              <div className="w-4/5 flex justify-center items-center rounded-xl bg-white/50 ml-auto border-2 border-black">
                 Händlerstation
               </div>
             </div>
-            <div className="grid grid-rows-4 gap-4 p-3">
-              <div className="mr-auto flex w-4/5 items-center justify-center rounded-xl border-2 border-black bg-white/50">
+            <div className="grid grid-rows-4 p-3 gap-4">
+              <div className="w-4/5 flex justify-center items-center rounded-xl bg-white/50 mr-auto border-2 border-black">
                 Goldschmiede
               </div>
-              <div className="row-span-2 ml-auto flex w-4/5 items-center justify-center rounded-xl border-2 border-black bg-white/50">
+              <div className="row-span-2 w-4/5 rounded-xl bg-white/50 flex justify-center items-center ml-auto border-2 border-black">
                 - 2 -
               </div>
-              <div className="mr-auto flex w-4/5 items-center justify-center rounded-xl border-2 border-black bg-white/50">
+              <div className="w-4/5 flex justify-center items-center rounded-xl bg-white/50 mr-auto border-2 border-black">
                 Arztkammer
               </div>
             </div>
           </div>
           <div className="flex justify-between">
             <a>Crew Modifier</a>
-            <a className="text-purple-700">+1</a>
+            <a className="text-purple-700">+2</a>
           </div>
         </div>
       </div>
       <div
-        className="pl-6 text-center text-4xl uppercase text-neutral-900"
+        className="text-4xl pl-6 text-neutral-900 text-center uppercase"
         style={{
           writingMode: "vertical-rl",
         }}

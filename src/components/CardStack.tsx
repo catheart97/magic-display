@@ -5,6 +5,7 @@ import { easeOutExpo as ease } from "easing-utils";
 export const CardStack = (props: {
   children: React.ReactNode[] | React.ReactNode;
   speed?: number;
+  swap?: boolean;
 }) => {
   const interval = React.useRef<NodeJS.Timeout>();
   const children = React.Children.toArray(props.children);
@@ -34,21 +35,25 @@ export const CardStack = (props: {
     <div className="relative h-full w-full min-w-full">
       {children.map((child, i) => {
         const ni = (children.length + i - activeIndex + 1) % children.length;
-        const alpha = ease((ni - 1) / (children.length - 1));
-        const falpha = ease((ni - 1) / children.length);
+        let alpha = ease((ni - 1)**2 / (children.length)**2);
+        let falpha = ease((ni - 1)**2 / children.length**2);
+
+        if (props.swap) {
+          // alpha = 1 - alpha;
+          // falpha = 1 - falpha;
+        }
 
         return (
           <div
             key={i}
             className="absolute transition-all duration-500 ease-in-out"
             style={{
+              left: props.swap ? "10%" : "0%",
               width: "90%",
               height: "100%",
-              transform: `
-                                translateX(${35.5 * alpha}%) 
-                                scale(${1 - 0.5 * falpha})
-                                `,
-              zIndex: children.length - ni,
+              transform: ` translateX(${(props.swap ? -35.5 : 35.5) * alpha}%) scale(${1 - 0.5 * falpha})
+                          `,
+              zIndex: ni == 0 ? 0 : children.length - ni,
               opacity: ni === 0 ? 0 : 1,
             }}
           >

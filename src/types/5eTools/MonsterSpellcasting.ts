@@ -1,4 +1,5 @@
-import { Ability, MonsterAbilityDisplayType } from "./Bestiary";
+import { Ability } from "./Ability";
+import { MonsterAbilityDisplayType } from "./Bestiary";
 import { EntryType } from "./Entry";
 
 export interface MonsterSpellcasting {

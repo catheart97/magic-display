@@ -1,5 +1,5 @@
 import { Bona_Nova } from "next/font/google";
-import "@/app/(main-app)/global.css";
+import "@/app/(main-app)/layout.css";
 import "./layout.css"; // printing specific css
 import { Providers } from "@/components/Providers";
 

@@ -59,7 +59,7 @@ export const Tipps = React.memo(() => {
 
   return (
     <div className="h-full w-full shrink grow gap-2 text-neutral-800">
-      <CardStack>
+      <CardStack speed={40000}>
         {[
           ...components,
           ...tipps.map((tipp, index) => (

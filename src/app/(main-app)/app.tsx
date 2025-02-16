@@ -14,6 +14,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import * as React from "react";
 import Markdown from "react-markdown";
+import Calendar from "@/components/Calendar";
 
 const ParticleLayer = React.memo(() => {
   const [init, setInit] = React.useState(false);
@@ -155,12 +156,6 @@ export default () => {
                     <div className="grow">
                       <PartySlider />
                     </div>
-                    <div className="relative h-full shrink-0">
-                      <Aspect1Element className="h-full" />
-                      <div className="absolute inset-0 rounded-xl shadow-2xl shadow-black">
-                        <PartyOverview />
-                      </div>
-                    </div>
                   </>
                 ) : (
                   <div className="flex h-full w-full flex-col">
@@ -180,10 +175,20 @@ export default () => {
             </div>
           </div>
 
+          {campaignData && campaignData.calendar && (
+          <div className="absolute bottom-10 z-20" style={{
+            left: "52%"
+          }}>
+            <div className="w-64 h-64 bg-white rounded-xl overflow-hidden shadow-2xl">
+              <Calendar admin={false} />
+            </div>
+          </div>
+        )}
+
           <div
             className={
               "flex w-1/2 flex-col p-10 " +
-              (usePathOfHeroes ? "justify-start pr-24" : "justify-center")
+              (usePathOfHeroes ? "justify-start pr-26" : "justify-center")
             }
           >
             <div className="relative h-fit">
@@ -230,7 +235,7 @@ export default () => {
 
               <div
                 className={[
-                  "linear prose prose-neutral absolute bottom-0 left-0 right-0 top-0 max-w-none rounded-xl bg-white p-8 transition-opacity duration-1000 prose-p:w-full",
+                  "linear prose prose-neutral absolute bottom-0 left-0 right-0 top-0 max-w-none rounded-xl bg-white p-8 transition-opacity duration-1000 prose-p:w-full z-30",
                   !isLoading && serverState?.previewText != ""
                     ? "opacity-100"
                     : "opacity-0",

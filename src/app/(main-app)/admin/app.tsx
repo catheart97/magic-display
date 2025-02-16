@@ -13,6 +13,7 @@ import { Tab, TabView } from "@/components/TabView";
 import ProtectedPage from "@/components/ProtectedPage";
 import { Compendium } from "@/components/Compendium";
 import { Metadata } from "next";
+import Calendar from "@/components/Calendar";
 
 export default () => {
   return (
@@ -28,7 +29,9 @@ export default () => {
               </div>
               <PreviewTextOption />
               <div className="flex w-full justify-center">
-                <PartyOverview admin />
+                <div className="relative w-96 h-96">
+                  <Calendar admin={true} />
+                </div>
               </div>
             </Tab>
 

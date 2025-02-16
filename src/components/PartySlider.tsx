@@ -1,6 +1,7 @@
 import { useCampaignData, useServerState } from "@/server/ClientUtility";
 import { CardStack } from "./CardStack";
 import React from "react";
+import { Player } from "@/types/Campaign";
 
 const Bubble = (props: {
   children: React.ReactNode;
@@ -10,7 +11,7 @@ const Bubble = (props: {
   return (
     <div
       className={
-        "flex min-w-10 items-center justify-between gap-2 rounded-xl bg-french-900/80 p-1 px-6 text-white " +
+        "flex min-w-10 items-center justify-between gap-2 rounded-xl bg-neutral-700/80 p-1 px-6 text-white " +
         props.className
       }
       style={props.style}
@@ -21,7 +22,7 @@ const Bubble = (props: {
 };
 
 export const PlayerCard = (props: {
-  image: string;
+  image?: string;
   name: string;
   race: string;
   class: string;
@@ -35,44 +36,58 @@ export const PlayerCard = (props: {
     CHA: string | number;
   };
   npc?: boolean;
+  titles?: string[];
 }) => (
   <div
     className="h-full min-h-full w-full overflow-hidden rounded-xl"
     style={{
-      backgroundImage: `url(${props.image})`,
-      backgroundSize: "cover",
+      backgroundImage: props.image ? `url(${props.image})` : "",
+      backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
+      backgroundPosition: "left",
+      backgroundColor: "#111",
     }}
   >
-    <div className="flex h-full w-full flex-col gap-2 overflow-hidden rounded-xl bg-gradient-to-b from-black/0 via-black/10 to-black/70 p-4">
-      <div className="flex w-full flex-col items-end text-end text-white">
-        <p className="w-full text-end text-xs text-white">{props.class}</p>
-        <div className="w-full text-xl">
-          <a className="text-sm text-neutral-50/80">{props.race}</a>&nbsp;
-          <a>{props.name}</a>
+    <div className="h-full w-ful flex justify-end relative">
+      <div className="absolute bg-gradient-to-r from-black/0 via-black to-black right-0 top-0 bottom-0 left-1/4">
+      </div>
+      <div className="absolute top-0 right-0 bottom-0 flex h-full w-96 flex-col gap-2 overflow-hidden rounded-xl p-4 z-10">
+        <div className="flex w-full flex-col items-end text-end text-white">
+          <p className="w-full text-end text-xs text-white">{props.class}</p>
+          <div className="w-full text-xl">
+            <a className="text-sm text-neutral-50/80">{props.race}</a>&nbsp;
+            <a>{props.name}</a>
+          </div>
         </div>
-      </div>
-      <div className="grow"></div>
-      <div className={"flex justify-end " + (props.npc ? "" : "hidden")}>
-        <Bubble>
-          <p className="text-xs">NPC|Sidekick</p>
-        </Bubble>
-      </div>
-      <p className="w-full text-end text-white">{props.description}</p>
-      <div className="grid grid-cols-3 flex-wrap gap-2">
-        {Object.keys(props.stats).map((key) => (
-          <Bubble
-            key={key}
-            style={{
-              fontSize: "0.6rem",
-            }}
-          >
-            <p className="">{key}</p>
-            {/* @ts-ignore */}
-            <p className="text-2xl">{props.stats[key]}</p>
-          </Bubble>
-        ))}
+        <div className={"flex flex-wrap justify-end items-center gap-2 " + ((props.titles && props.titles.length > 0) ? "" : "hidden")}>
+          {
+            props.titles && props.titles.length > 0 && (
+              props.titles.map((title, i) => (
+                <Bubble key={i}>
+                  <i className="bi bi-megaphone-fill"></i>
+                  <p className="text-sm">{title}</p>
+                </Bubble>
+              ))
+            )
+          }
+        </div>
+        <p className="w-full text-end text-white">{props.description}</p>
+        <div className="grow"></div>
+        <div className="grid grid-cols-3 flex-wrap gap-2">
+          {Object.keys(props.stats).map((key) => (
+            <Bubble
+              key={key}
+              style={{
+                fontSize: "0.6rem",
+              }}
+              className="flex gap-2 justify-center items-center"
+            >
+              <p className="text-lg">{key}</p>
+              {/* @ts-ignore */}
+              <p className="text-xl font-bold">{props.stats[key]}</p>
+            </Bubble>
+          ))}
+        </div>
       </div>
     </div>
   </div>
@@ -97,19 +112,20 @@ export const PartySlider = (props: {}) => {
           return (
             <PlayerCard
               key={player.name}
-              image={`/api/image?fn=data/campaigns/${serverState!.campaign}/${encodeURIComponent(player.images.portrait)}`}
+              image={player.images.portrait != "" ? `/api/image?fn=data/campaigns/${serverState!.campaign}/${encodeURIComponent(player.images.portrait)}` : undefined}
               name={player.name}
               npc={true}
               race={player.race}
               class={player.class}
               description={player.description}
               stats={stats}
+              titles={player.titles}
             />
           );
         }),
       );
       players.push(
-        ...campaignData!.players.map((player, i) => {
+        ...campaignData!.players.map((player : Player, i) => {
           return (
             <PlayerCard
               key={player.name}
@@ -120,6 +136,7 @@ export const PartySlider = (props: {}) => {
               class={player.class}
               description={player.description}
               stats={player.stats}
+              titles={player.titles}
             />
           );
         }),
@@ -130,7 +147,7 @@ export const PartySlider = (props: {}) => {
 
   return (
     <div className="h-full min-h-full w-full rounded-xl">
-      <CardStack>{players}</CardStack>
+      <CardStack swap speed={20000}>{players}</CardStack>
     </div>
   );
 };

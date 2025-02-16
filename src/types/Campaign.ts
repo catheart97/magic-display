@@ -24,6 +24,7 @@ export type AbstractPlayer = {
   race: string;
   class: string;
   description: string;
+  titles?: string[];
 };
 
 export type Player = AbstractPlayer & {

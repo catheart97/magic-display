@@ -8,6 +8,7 @@ import { PlayerNPC } from "@/types/Campaign";
 import { getSpellDict } from "@/server/Database";
 import LoadingPage from "@/components/LoadingPage";
 import { Spell } from "@/types/5eTools/Spell";
+import { Entry } from "@/types/5eTools/Entry";
 
 const Bubble = (props: { children: React.ReactNode; className?: string }) => {
   return (
@@ -36,6 +37,34 @@ const rangeDistanceType2Emoji = (range: string) => {
       return "🎯 ranged";
   }
 };
+
+const EntryRenderer = (props: {
+  entry: (string | Entry)[];
+}) => {
+  return props.entry.map((e, i) => {
+    return (
+      <div
+        style={{
+          // respect lf in spell entries
+          whiteSpace: "pre-line",
+        }}
+        key={i}
+      >
+        {typeof e === "string" ? e : (
+          <>
+            {e.entry ?? ""}
+            {e.entries && (
+              <EntryRenderer entry={e.entries} />
+            )}
+            {e.items && (
+              <EntryRenderer entry={e.items} />
+            )}
+          </>
+        )}
+      </div>
+    )
+  })
+}
 
 const duration2Emoji = (duration: string) => {
   switch (duration) {
@@ -163,14 +192,7 @@ const SpellCard = (props: {
           {props.spell.components.s ? "S" : ""}
         </Bubble>
       </div>
-      <div
-        style={{
-          // respect lf in spell entries
-          whiteSpace: "pre-line",
-        }}
-      >
-        {props.spell.entries.join("\n")}
-      </div>
+      <EntryRenderer entry={props.spell.entries} />
     </div>
   );
 };
