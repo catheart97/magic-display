@@ -1,0 +1,227 @@
+@import 'tailwindcss';
+
+@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css')
+layer(utilities);
+
+@config '../../tailwind.config.ts';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer base {
+  button, [role="button"] {
+    cursor: pointer;
+  }
+}
+
+@keyframes sunrise {
+  from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(315deg);
+  }
+}
+
+@keyframes moonrise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes dawn {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes noon {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes dusk {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+}
+
+@keyframes midnight {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+}
+
+body {
+  --animation-speed: 24s;
+}
+
+body.pause {
+  --animation-speed: 0;
+}
+
+.sky {
+  width: 100%;
+  height: 100%;
+  /* position: ; */
+  top: 0;
+  left: 0;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.sky__phase {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+.sky__dawn {
+  background: linear-gradient(
+    0deg,
+    rgba(254, 215, 102, 1) 0%,
+    rgba(205, 237, 246, 1) 100%
+  );
+}
+
+.sky__noon {
+  background: linear-gradient(
+    0deg,
+    rgba(205, 237, 246, 1) 0%,
+    rgba(36, 123, 160, 1) 100%
+  );
+}
+
+.sky__dusk {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 32, 110, 1) 0%,
+    rgba(10, 0, 94, 1) 100%
+  );
+}
+
+.sky__midnight {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 20, 1) 0%,
+    rgba(10, 0, 94, 1) 100%
+  );
+}
+
+.sun {
+  position: absolute;
+  background-color: rgb(254, 215, 102);
+  border-radius: 50%;
+  box-shadow: 0 0 14px 14px rgba(254, 215, 102, 0.2);
+}
+
+.moon {
+  /* position: absolute; */
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.2);
+}
+
+.star {
+  width: 1px;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.dawn {
+  background: linear-gradient(
+    0deg,
+    rgba(254, 215, 102, 1) 0%,
+    rgba(205, 237, 246, 1) 100%
+  );
+}
+
+.noon {
+  background: linear-gradient(
+    0deg,
+    rgba(205, 237, 246, 1) 0%,
+    rgba(36, 123, 160, 1) 100%
+  );
+}
+
+.dusk {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 32, 110, 1) 0%,
+    rgba(10, 0, 94, 1) 100%
+  );
+}
+
+.midnight {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 20, 1) 0%,
+    rgba(10, 0, 94, 1) 100%
+  );
+}

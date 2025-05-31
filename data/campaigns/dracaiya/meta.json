@@ -1,0 +1,612 @@
+{
+    "name": "Dracaiya",
+    "calendar": {
+        "name": "Dracaiya",
+        "static_data": {
+            "year_data": {
+                "first_day": 1,
+                "overflow": true,
+                "global_week": [
+                    "Vaj'nir",
+                    "Ghuj'nir",
+                    "Duj'nir",
+                    "Dar'nir",
+                    "Kol'nir",
+                    "Vorox"
+                ],
+                "timespans": [
+                    {
+                        "name": "Jan'tir",
+                        "type": "month",
+                        "length": 32,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Froul",
+                        "type": "month",
+                        "length": 29,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Hil'lor",
+                        "type": "month",
+                        "length": 31,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Dragmen",
+                        "type": "month",
+                        "length": 33,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Joul",
+                        "type": "month",
+                        "length": 28,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Huj'nen",
+                        "type": "month",
+                        "length": 27,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Dalm",
+                        "type": "month",
+                        "length": 32,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Vortnix",
+                        "type": "month",
+                        "length": 28,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Drij'na",
+                        "type": "month",
+                        "length": 33,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Kha'uhl",
+                        "type": "month",
+                        "length": 32,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Dijni",
+                        "type": "month",
+                        "length": 29,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Norkh",
+                        "type": "month",
+                        "length": 33,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Voloss",
+                        "type": "month",
+                        "length": 36,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Quen",
+                        "type": "month",
+                        "length": 33,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Lij'na",
+                        "type": "month",
+                        "length": 30,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Grij'na",
+                        "type": "month",
+                        "length": 30,
+                        "interval": 1,
+                        "offset": 0
+                    }
+                ],
+                "leap_days": []
+            },
+            "moons": [
+                {
+                    "name": "Aal'jur",
+                    "cycle": 42,
+                    "cycle_rounding": "round",
+                    "shift": 0,
+                    "granularity": 40,
+                    "color": "#ffffff",
+                    "shadow_color": "#292b4a",
+                    "hidden": false
+                },
+                {
+                    "name": "Jin'jur",
+                    "cycle": 30,
+                    "cycle_rounding": "round",
+                    "shift": 0,
+                    "granularity": 24,
+                    "color": "#ffffff",
+                    "shadow_color": "#292b4a",
+                    "hidden": false
+                },
+                {
+                    "name": "Z'jur",
+                    "cycle": 10,
+                    "cycle_rounding": "round",
+                    "shift": 0,
+                    "granularity": 8,
+                    "color": "#ffffff",
+                    "shadow_color": "#292b4a",
+                    "hidden": false
+                }
+            ],
+            "clock": {
+                "enabled": true,
+                "render": true,
+                "hours": 24,
+                "minutes": 60,
+                "offset": 0,
+                "crowding": 0
+            },
+            "seasons": {
+                "data": [
+                    {
+                        "name": "Frühling",
+                        "color": [
+                            "#979ce2",
+                            "#e5e5d8"
+                        ],
+                        "time": {
+                            "sunrise": {
+                                "hour": 6,
+                                "minute": 0
+                            },
+                            "sunset": {
+                                "hour": 18,
+                                "minute": 0
+                            }
+                        },
+                        "timespan": 2,
+                        "day": 22,
+                        "gradient": {
+                            "start": [
+                                236,
+                                56.4,
+                                73.9
+                            ],
+                            "end": [
+                                60,
+                                20,
+                                87.3
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Sommer",
+                        "color": [
+                            "#e5e5d8",
+                            "#f5491c"
+                        ],
+                        "time": {
+                            "sunrise": {
+                                "hour": 5,
+                                "minute": 0
+                            },
+                            "sunset": {
+                                "hour": 21,
+                                "minute": 0
+                            }
+                        },
+                        "timespan": 6,
+                        "day": 7,
+                        "gradient": {
+                            "start": [
+                                60,
+                                20,
+                                87.3
+                            ],
+                            "end": [
+                                12,
+                                91.6,
+                                53.5
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Herbst",
+                        "color": [
+                            "#f5491c",
+                            "#0bcfe9"
+                        ],
+                        "time": {
+                            "sunrise": {
+                                "hour": 6,
+                                "minute": 0
+                            },
+                            "sunset": {
+                                "hour": 18,
+                                "minute": 0
+                            }
+                        },
+                        "timespan": 10,
+                        "day": 8,
+                        "gradient": {
+                            "start": [
+                                12,
+                                91.6,
+                                53.5
+                            ],
+                            "end": [
+                                187,
+                                91,
+                                47.8
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Winter",
+                        "color": [
+                            "#0bcfe9",
+                            "#979ce2"
+                        ],
+                        "time": {
+                            "sunrise": {
+                                "hour": 9,
+                                "minute": 0
+                            },
+                            "sunset": {
+                                "hour": 16,
+                                "minute": 0
+                            }
+                        },
+                        "timespan": 14,
+                        "day": 6,
+                        "gradient": {
+                            "start": [
+                                187,
+                                91,
+                                47.8
+                            ],
+                            "end": [
+                                236,
+                                56.4,
+                                73.9
+                            ]
+                        }
+                    }
+                ],
+                "locations": [
+                    {
+                        "name": "Grazak Wüste",
+                        "seasons": [
+                            {
+                                "time": {
+                                    "sunrise": {
+                                        "hour": 6,
+                                        "minute": 0
+                                    },
+                                    "sunset": {
+                                        "hour": 18,
+                                        "minute": 0
+                                    }
+                                },
+                                "weather": {
+                                    "temp_low": 0,
+                                    "temp_high": 0,
+                                    "precipitation": 0,
+                                    "precipitation_intensity": 0
+                                }
+                            },
+                            {
+                                "time": {
+                                    "sunrise": {
+                                        "hour": 5,
+                                        "minute": 0
+                                    },
+                                    "sunset": {
+                                        "hour": 21,
+                                        "minute": 0
+                                    }
+                                },
+                                "weather": {
+                                    "temp_low": 0,
+                                    "temp_high": 0,
+                                    "precipitation": 0,
+                                    "precipitation_intensity": 0
+                                }
+                            },
+                            {
+                                "time": {
+                                    "sunrise": {
+                                        "hour": 6,
+                                        "minute": 0
+                                    },
+                                    "sunset": {
+                                        "hour": 18,
+                                        "minute": 0
+                                    }
+                                },
+                                "weather": {
+                                    "temp_low": 0,
+                                    "temp_high": 0,
+                                    "precipitation": 0,
+                                    "precipitation_intensity": 0
+                                }
+                            },
+                            {
+                                "time": {
+                                    "sunrise": {
+                                        "hour": 9,
+                                        "minute": 0
+                                    },
+                                    "sunset": {
+                                        "hour": 16,
+                                        "minute": 0
+                                    }
+                                },
+                                "weather": {
+                                    "temp_low": 0,
+                                    "temp_high": 0,
+                                    "precipitation": 0,
+                                    "precipitation_intensity": 0
+                                }
+                            }
+                        ],
+                        "settings": {
+                            "timezone": {
+                                "hour": 0,
+                                "minute": 0
+                            },
+                            "season_based_time": true,
+                            "large_noise_frequency": 0.015,
+                            "large_noise_amplitude": 5,
+                            "medium_noise_frequency": 0.3,
+                            "medium_noise_amplitude": 2,
+                            "small_noise_frequency": 0.8,
+                            "small_noise_amplitude": 3
+                        }
+                    }
+                ],
+                "global_settings": {
+                    "season_offset": -9,
+                    "weather_offset": 0,
+                    "seed": 1669863513,
+                    "temp_sys": "metric",
+                    "wind_sys": "metric",
+                    "cinematic": true,
+                    "enable_weather": false,
+                    "periodic_seasons": false,
+                    "color_enabled": true,
+                    "preset_order": [
+                        1,
+                        2,
+                        3,
+                        0
+                    ]
+                }
+            },
+            "eras": [
+                {
+                    "name": "Ära der ewigen Ruhe",
+                    "formatting": "Year {{year}} - {{era_name}}",
+                    "description": "",
+                    "settings": {
+                        "use_custom_format": false,
+                        "show_as_event": false,
+                        "starting_era": false,
+                        "event_category_id": null,
+                        "ends_year": false,
+                        "restart": false
+                    },
+                    "date": {
+                        "year": 7621,
+                        "timespan": 12,
+                        "day": 3,
+                        "epoch": 3779889
+                    }
+                }
+            ],
+            "settings": {
+                "layout": "vertical",
+                "comments": "none",
+                "show_current_month": true,
+                "private": true,
+                "allow_view": true,
+                "only_backwards": true,
+                "only_reveal_today": false,
+                "hide_moons": false,
+                "hide_clock": false,
+                "hide_events": false,
+                "hide_eras": false,
+                "hide_all_weather": false,
+                "hide_future_weather": false,
+                "add_month_number": true,
+                "add_year_day_number": false,
+                "default_category": -1
+            },
+            "cycles": {
+                "format": "",
+                "data": []
+            }
+        },
+        "dynamic_data": {
+            "year": 7621,
+            "timespan": 12,
+            "day": 3,
+            "epoch": 3779889,
+            "custom_location": true,
+            "location": "0",
+            "hour": 2,
+            "minute": 0,
+            "current_era": 0
+        },
+        "events": [
+            {
+                "id": 2132095,
+                "name": "Tag der Neugeburt",
+                "data": {
+                    "has_duration": false,
+                    "duration": 1,
+                    "show_first_last": false,
+                    "limited_repeat": false,
+                    "limited_repeat_num": 1,
+                    "conditions": [
+                        [
+                            "Month",
+                            "0",
+                            [
+                                "0"
+                            ]
+                        ],
+                        [
+                            "&&"
+                        ],
+                        [
+                            "Day",
+                            "0",
+                            [
+                                "1"
+                            ]
+                        ]
+                    ],
+                    "connected_events": [],
+                    "date": [],
+                    "search_distance": 0,
+                    "overrides": {
+                        "moons": []
+                    }
+                },
+                "description": "<p>An diesem Tag wird das neue Jahr und damit das Schaffen des Universums gefeiert.</p>",
+                "event_category_id": "holiday",
+                "calendar_id": "dracaiya",
+                "settings": {
+                    "color": "Dark-Solid",
+                    "text": "text",
+                    "hide": false,
+                    "print": false
+                },
+                "created_at": "2023-12-24 08:16:03",
+                "updated_at": "2023-12-24 08:16:03",
+                "sort_by": 0,
+                "creator_id": 57858
+            }
+        ],
+        "categories": [
+            {
+                "name": "Holiday",
+                "calendar_id": "dracaiya",
+                "category_settings": {
+                    "hide": false,
+                    "player_usable": false
+                },
+                "event_settings": {
+                    "color": "Dark-Solid",
+                    "text": "text",
+                    "hide": false,
+                    "print": false
+                },
+                "created_at": "2023-12-24 08:25:58",
+                "updated_at": "2023-12-24 08:25:58",
+                "sort_by": 0,
+                "id": "holiday"
+            }
+        ]
+    },
+    "players": [
+        {
+            "name": "Asha",
+            "race": "Tabaxi",
+            "titles": [
+                "Käpitänin der BiSNiSWA",
+                "Lehrling vom hohen Berg"
+            ],
+            "class": "Wild Mage Sourcerer",
+            "description": "Eine Weise und Drachenwandlerin, die stets Angst und Chaos über ihre Magie regieren lässt. Sie ist auf der Suche nach ihrem Lehrmeister Ebras vom hohen Berg, welcher wohl mehr über ihre Vergangenheit weiß als sie selbst.",
+            "image": "characters/asha.png"
+        },
+        {
+            "name": "Camtin",
+            "race": "Eladrin",
+            "titles": [
+                "Wächterin der magischen Wildnis"
+            ],
+            "class": "Dragon Knight Fighter",
+            "description": "Wächterin des Tores zum Feywild. Sie besitzt ein großes Herz für ihre Familie, aber auch ein hohes Maß an Disziplin. Das Vermächtnis ihrer Vorfahren liegt ihr im Nacken.",
+            "image": "characters/yllalyn.png"
+        },
+        {
+            "name": "Xala Juwell",
+            "race": "Half-Orc",
+            "class": "Totem Warrior Barbarian / Jeweler Artificer",
+            "description": "Adoptiert von zwei Gnomen, lernte sie das Handwerk als Juwelierin, trotz ihrer unbändigen körperlichen Kraft. Sie ist auf der Suche nach ihrem wahren Ursprung.",
+            "titles": [
+                "Die Glitteraxt",
+                "Alay die Tochter der Archfey"
+            ],
+            "image": "characters/xala.png"
+        },
+        {
+            "name": "Eleonor",
+            "class": "Moon Druid",
+            "race": "Water Genasi",
+            "description": "Sie wurde als Kind von Fischern aus dem Meer gefischt. Sie wurde in Folge von der Druidin Dextra großgezogen, unwissend, dass sie die Prinzessin des Waswoge Königreichs ist.",
+            "titles": [
+                "Prinzessin von Waswoge"
+            ],
+            "image": "characters/eleonor.png"
+        }
+    ],
+    "playerNPCs": [
+        {
+            "name": "Yri ad Fajen",
+            "npc": true,
+            "race": "Changeling",
+            "class": "Thaumaturgy Wizard",
+            "description": "Yri ad Fajen is a book lover and a master of the arcane arts.",
+            "image": "characters/yri.png",
+            "titles": [
+                "Erzmagierin von Zaj",
+                "Doktorin der Thaumaturgie",
+                "Doktorin der Arkanen Wissenschaften",
+                "Doktorin der Drachenwandler"
+            ]
+        },
+        {
+            "name": "Leopolda Silberlied",
+            "npc": true,
+            "race": "Harengon",
+            "titles": [
+                "Hand der Glitteraxt"
+            ],
+            "class": "Sword Bard",
+            "description": "Talentierte Bardin mit einer düsteren Vergangenheit, die es langsam schafft ihr Herz für andere zu öffnen. Sie ist talentiert im Umgang mit dem Schwert und vielen Instrumenten sowie Teilen der Magie.",
+            "image": "characters/leopolda.png"
+        }
+    ],
+    "map": {
+        "image": "map.png",
+        "heroPath": "map.svg"
+    }
+}
