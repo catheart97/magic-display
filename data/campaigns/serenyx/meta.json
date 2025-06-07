@@ -5,5 +5,248 @@
     "displayData": {
         "foregroundActives": {},
         "backgroundIndex": 0
+    },
+    "calendar": {
+        "name": "Serenyx",
+        "static_data": {
+            "year_data": {
+                "first_day": 1,
+                "overflow": true,
+                "global_week": [
+                    "Lunara\/Mondtag",
+                    "Feyra\/Bl\u00fctentag",
+                    "Orundaras\/Richtertag",
+                    "Varnak\/Eisentag",
+                    "Tharos\/Altentag",
+                    "Nyssari\/Traumtag",
+                    "Serenith\/Stilltag"
+                ],
+                "timespans": [
+                    {
+                        "name": "Lunaris",
+                        "type": "month",
+                        "length": 175,
+                        "interval": 1,
+                        "offset": 0
+                    },
+                    {
+                        "name": "Umbra",
+                        "type": "month",
+                        "length": 175,
+                        "interval": 1,
+                        "offset": 0
+                    }
+                ],
+                "leap_days": []
+            },
+            "moons": [
+                {
+                    "name": "Luna",
+                    "cycle": "350",
+                    "cycle_rounding": "round",
+                    "shift": 175,
+                    "granularity": 40,
+                    "color": "#ffffff",
+                    "shadow_color": "#292b4a",
+                    "hidden": false
+                }
+            ],
+            "clock": {
+                "enabled": true,
+                "render": true,
+                "hours": 24,
+                "minutes": 60,
+                "offset": 0,
+                "crowding": 0
+            },
+            "seasons": {
+                "data": [],
+                "locations": [],
+                "global_settings": {
+                    "season_offset": 0,
+                    "weather_offset": 0,
+                    "seed": 372162875,
+                    "temp_sys": "metric",
+                    "wind_sys": "metric",
+                    "cinematic": false,
+                    "enable_weather": false,
+                    "periodic_seasons": true,
+                    "color_enabled": false
+                }
+            },
+            "eras": [
+                {
+                    "name": "Sternenfall",
+                    "formatting": "Jahr {{era_year}} nach dem {{era_name}}",
+                    "description": "",
+                    "settings": {
+                        "use_custom_format": true,
+                        "show_as_event": false,
+                        "starting_era": true,
+                        "event_category_id": null,
+                        "ends_year": false,
+                        "restart": false
+                    },
+                    "date": {
+                        "year": 3401,
+                        "timespan": 1,
+                        "day": 175,
+                        "epoch": 1190349
+                    }
+                },
+                {
+                    "name": "Herzstille",
+                    "formatting": "Jahr {{era_year}} nach der {{era_name}}",
+                    "description": "",
+                    "settings": {
+                        "use_custom_format": true,
+                        "show_as_event": false,
+                        "starting_era": false,
+                        "event_category_id": null,
+                        "ends_year": false,
+                        "restart": false
+                    },
+                    "date": {
+                        "year": 2831,
+                        "timespan": 1,
+                        "day": 175,
+                        "epoch": 990849
+                    }
+                },
+                {
+                    "name": "Schwarzen Vollmond",
+                    "formatting": "Jahr {{era_year}} nach dem {{era_name}}",
+                    "description": "",
+                    "settings": {
+                        "use_custom_format": true,
+                        "show_as_event": false,
+                        "starting_era": false,
+                        "event_category_id": null,
+                        "ends_year": false,
+                        "restart": false
+                    },
+                    "date": {
+                        "year": 3201,
+                        "timespan": 1,
+                        "day": 175,
+                        "epoch": 1120349
+                    }
+                }
+            ],
+            "settings": {
+                "layout": "grid",
+                "comments": "none",
+                "show_current_month": false,
+                "private": false,
+                "allow_view": true,
+                "only_backwards": true,
+                "only_reveal_today": false,
+                "hide_moons": false,
+                "hide_clock": true,
+                "hide_events": false,
+                "hide_eras": false,
+                "hide_all_weather": true,
+                "hide_future_weather": true,
+                "add_month_number": false,
+                "add_year_day_number": false,
+                "default_category": -1,
+                "hide_weekdays": false,
+                "hide_weather_temp": true,
+                "hide_wind_velocity": true
+            },
+            "cycles": {
+                "format": "Jahr {{1}}",
+                "data": [
+                    {
+                        "length": 1,
+                        "offset": 0,
+                        "names": [
+                            "des Wassers",
+                            "der Erde",
+                            "des Feuers",
+                            "der Luft",
+                            "der Sonne",
+                            "der Sterne",
+                            "des Mondes"
+                        ]
+                    }
+                ]
+            }
+        },
+        "dynamic_data": {
+            "year": 3401,
+            "timespan": 1,
+            "day": 175,
+            "epoch": 1190349,
+            "custom_location": false,
+            "location": null,
+            "hour": 21,
+            "minute": 0,
+            "current_era": 2
+        },
+        "events": [
+            {
+                "id": 3174848,
+                "name": "Yvariel \/ Erwachen",
+                "data": {
+                    "has_duration": false,
+                    "duration": 1,
+                    "show_first_last": false,
+                    "limited_repeat": false,
+                    "limited_repeat_num": 1,
+                    "conditions": [
+                        [
+                            "Day",
+                            "0",
+                            [
+                                "175"
+                            ]
+                        ],
+                        [
+                            "&&"
+                        ],
+                        [
+                            "Month",
+                            "0",
+                            [
+                                "1"
+                            ]
+                        ],
+                        [
+                            "&&"
+                        ],
+                        [
+                            "Year",
+                            "6",
+                            [
+                                "1",
+                                "0"
+                            ]
+                        ]
+                    ],
+                    "connected_events": [],
+                    "date": [],
+                    "search_distance": 2,
+                    "overrides": {
+                        "moons": []
+                    }
+                },
+                "description": "",
+                "event_category_id": -1,
+                "calendar_id": "serenyx",
+                "settings": {
+                    "color": "Dark-Solid",
+                    "text": "text",
+                    "hide": false,
+                    "print": false,
+                    "hide_full": false
+                },
+                "created_at": "2025-06-06 06:41:37",
+                "updated_at": "2025-06-06 06:41:37",
+                "sort_by": 4,
+                "creator_id": 57858
+            }
+        ],
+        "categories": []
     }
 }

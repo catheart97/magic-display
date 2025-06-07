@@ -58,8 +58,10 @@ export const loadServerState = async () => {
   }
 
   let serverState: ServerState = {
-    battlemapVisible: false,
-    preview: undefined,
+    preview: {
+      type: "none",
+      data: ""
+    },
     campaign: "dracaiya",
   };
 

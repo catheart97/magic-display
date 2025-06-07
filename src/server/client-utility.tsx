@@ -10,6 +10,7 @@ export const useServerState = (once?: boolean) => {
   const { data, refetch } = useQuery({
     queryKey: ["serverState"],
     queryFn: async () => {
+      console.log("Refetching")
       return await fetchServerState();
     },
     enabled: false,

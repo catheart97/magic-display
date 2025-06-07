@@ -8,7 +8,7 @@ import Cookies from "js-cookie";
 
 const PRODUCTION = process.env.NODE_ENV === "production";
 
-export const Providers = (props: { children: React.ReactNode }) => {
+export const QueryProvider = (props: { children: React.ReactNode }) => {
   const [queryClient] = React.useState(() => new QueryClient());
 
   React.useEffect(() => {

@@ -7,7 +7,7 @@ export const CardStack = (props: {
   speed?: number;
   swap?: boolean;
 }) => {
-  const interval = React.useRef<NodeJS.Timeout>();
+  const interval = React.useRef<NodeJS.Timeout>(undefined);
   const children = React.Children.toArray(props.children);
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
 

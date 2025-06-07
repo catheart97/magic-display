@@ -53,6 +53,7 @@
     "remark-gfm": "^4.0.1",
     "require-context": "^1.1.0",
     "sharp": "^0.34.2",
+    "sysend": "^1.17.5",
     "ts-unused-exports": "^11.0.1",
     "tsx": "^4.19.4",
     "uuid": "^11.1.0"

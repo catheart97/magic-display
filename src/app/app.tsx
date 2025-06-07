@@ -13,6 +13,52 @@ import { getDiashowImages } from "@/server/server";
 import * as React from "react";
 import Markdown from "react-markdown";
 
+const SmartImageFill = (props: { src: string; className?: string }) => {
+  const [heightMaxed, setHeightMaxed] = React.useState(false);
+  const image = React.useRef<HTMLImageElement>(null);
+
+  React.useEffect(() => {
+    if (!image.current) return;
+
+    // get parent element height and width
+    const parent = image.current.parentElement;
+    if (!parent) return;
+    const parentHeight = parent.clientHeight;
+    const parentWidth = parent.clientWidth;
+    const parentRatio = parentWidth / parentHeight;
+
+    const img = image.current;
+    const update = () => {
+      const imgHeight = img.naturalHeight;
+      const imgWidth = img.naturalWidth;
+      const imgRatio = imgWidth / imgHeight;
+
+      // Check if the image is taller than the parent
+      if (imgRatio < parentRatio) {
+        setHeightMaxed(true);
+      } else {
+        setHeightMaxed(false);
+      }
+    };
+    img.addEventListener("load", update);
+    img.addEventListener("error", update); // Handle error case as well
+
+    update(); // Call onLoad initially in case the image is already loaded
+  }, [props.src]);
+
+  return (
+    <img
+      ref={image}
+      className={
+        (heightMaxed ? "h-full w-auto" : "h-auto w-full") +
+        " transition-all duration-400 ease-in-out " +
+        props.className
+      }
+      src={props.src}
+    ></img>
+  );
+};
+
 export default () => {
   const [diashowIndex, setDiashowIndex] = React.useState(0);
   const [diashowImages, setDiashowImages] = React.useState<Array<string>>([]);
@@ -45,7 +91,7 @@ export default () => {
     <DisplayWrapper>
       <div className="relative h-full w-full">
         {/** Background blurred */}
-        <div className="absolute bottom-0 left-0 right-0 top-0">
+        <div className="absolute top-0 right-0 bottom-0 left-0">
           {diashowImages.map((image, index) => {
             const isPrev =
               (diashowIndex - 1 + diashowImages.length) %
@@ -60,7 +106,7 @@ export default () => {
               <div
                 key={index}
                 className={[
-                  "linear bottom-0 left-0 right-0 top-0 blur-xl transition-opacity duration-1000",
+                  "linear top-0 right-0 bottom-0 left-0 blur-xl transition-opacity duration-1000",
                   index === diashowIndex ? "opacity-100" : "opacity-0",
                   isPrev || isNext || is ? "absolute" : "hidden",
                 ].join(" ")}
@@ -74,7 +120,7 @@ export default () => {
           })}
         </div>
 
-        <div className="absolute bottom-10 right-10 z-20 h-96 w-xl">
+        <div className="absolute right-10 bottom-10 z-20 h-96 w-xl">
           {usePathOfHeroes ? <PathOfHeros /> : null}
         </div>
 
@@ -94,7 +140,7 @@ export default () => {
                   </>
                 ) : (
                   <div className="flex h-full w-full flex-col">
-                    <div className="flex grow flex-col justify-center text-french">
+                    <div className="text-french flex grow flex-col justify-center">
                       <div className="pb-4 text-7xl">
                         {campaignMeta && campaignMeta.name}
                       </div>
@@ -126,7 +172,7 @@ export default () => {
           <div
             className={
               "flex w-1/2 flex-col p-10 " +
-              (usePathOfHeroes ? "pr-26 justify-start" : "justify-center")
+              (usePathOfHeroes ? "justify-start pr-26" : "justify-center")
             }
           >
             <div className="relative h-fit">
@@ -146,7 +192,7 @@ export default () => {
                   <div
                     key={index}
                     className={[
-                      "linear absolute bottom-0 left-0 right-0 top-0 transition-opacity duration-1000",
+                      "linear absolute top-0 right-0 bottom-0 left-0 transition-opacity duration-1000",
                       index === diashowIndex ? "opacity-100" : "opacity-0",
                     ].join(" ")}
                   >
@@ -157,25 +203,6 @@ export default () => {
                   </div>
                 );
               })}
-              <div
-                className={[
-                  "linear absolute bottom-0 left-0 right-0 top-0 transition-opacity duration-1000",
-                  !isLoading && serverState?.preview?.type == "image"
-                    ? "opacity-100"
-                    : "opacity-0",
-                ].join(" ")}
-              >
-                {!isLoading &&
-                serverState?.preview?.data &&
-                serverState?.preview?.data != "" ? (
-                  <img
-                    className="aspect-1 w-full rounded-xl"
-                    src={serverState?.preview?.data}
-                  />
-                ) : (
-                  <></>
-                )}
-              </div>
             </div>
           </div>
         </div>
@@ -183,7 +210,27 @@ export default () => {
 
       <div
         className={[
-          "linear prose prose-lg prose-neutral absolute bottom-0 left-1/2 right-0 top-0 z-50 max-w-none rounded-l-xl bg-white p-8 transition-opacity duration-1000 prose-p:w-full",
+          "linear absolute inset-0 z-50 flex flex-col items-center justify-center bg-white/90 p-4 transition-opacity duration-1000",
+          !isLoading && serverState?.preview?.type == "image"
+            ? "opacity-100"
+            : "opacity-0",
+        ].join(" ")}
+      >
+        {!isLoading &&
+        serverState?.preview?.data &&
+        serverState?.preview?.data != "" ? (
+          <SmartImageFill
+            className="rounded-xl"
+            src={serverState?.preview?.data}
+          />
+        ) : (
+          <></>
+        )}
+      </div>
+
+      <div
+        className={[
+          "linear prose prose-lg prose-neutral prose-p:w-full absolute top-0 right-0 bottom-0 left-1/2 z-50 max-w-none rounded-l-xl bg-white p-8 transition-opacity duration-1000",
           !isLoading && serverState?.preview?.type == "text"
             ? "opacity-100"
             : "opacity-0",
