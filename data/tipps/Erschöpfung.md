@@ -12,5 +12,5 @@
         Du stirbst.
       </div>
     </div>
-    <div class="w-full text-center">Nach einer langen Rast wird 1 Stufe Erschöpfung entfernt.</div>
+    <div class="w-full text-center font-black mt-10">Nach einer langen Rast wird 1 Stufe Erschöpfung entfernt.</div>
 </div>
