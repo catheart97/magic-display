@@ -1,9 +1,18 @@
 @import 'tailwindcss';
 
-@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css')
-layer(utilities);
-
 @config '../../tailwind.config.ts';
+
+@theme {
+    --inset-shadow-glass: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
+    inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+  --inset-shadow-glass-thin: inset 1px 1px .5px 0 rgba(255, 255, 255, 0.75),
+    inset -.5px -.5px .5px 1px rgba(255, 255, 255, 0.75);
+  --inset-shadow-glass-thin-transparent: inset 1px 1px .5px 0 rgba(255, 255, 255, 0.5),
+    inset -.5px -.5px .5px 1px rgba(255, 255, 255, 0.5);
+  --inset-shadow-glass-transparent: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.3),
+    inset -1px -1px 1px 1px rgba(255, 255, 255, 0.3);
+
+}
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,

@@ -280,7 +280,7 @@ export const getMoonCycleProgressForMoon = (
     daysPassedTotal += calendar.static_data.year_data.timespans[i].length;
   }
   const daysPassed = daysPassedTotal % moon.cycle;
-  return daysPassed / moon.cycle;
+  return (daysPassed + moon.shift) / moon.cycle;
 };
 
 export const decrementDay = (

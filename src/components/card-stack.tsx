@@ -57,7 +57,7 @@ export const CardStack = (props: {
               opacity: ni === 0 ? 0 : 1,
             }}
           >
-            <div className="h-full w-full rounded-xl shadow-2xl shadow-black">
+            <div className="h-full w-full rounded-3xl shadow-2xl shadow-black">
               {child}
             </div>
           </div>

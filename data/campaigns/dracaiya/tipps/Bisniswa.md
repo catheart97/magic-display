@@ -13,8 +13,9 @@
         <div style="width: 80%; display: flex; justify-content: center; align-items: center; border-radius: 0.75rem; background-color: rgba(255, 255, 255, 0.5); margin-left: auto; border: 2px solid black;">
           Waffenkammer
         </div>
-        <div style="grid-row: span 2; width: 80%; border-radius: 0.75rem; background-color: rgba(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center; border: 2px solid black;">
-          - 2 -
+        <div style="grid-row: span 2; width: 80%; border-radius: 0.75rem; background-color: rgba(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center; border: 2px solid black; text-align: center;">
+          Teleportationskreis <br/>
+          Meditationskammer
         </div>
         <div style="width: 80%; display: flex; justify-content: center; align-items: center; border-radius: 0.75rem; background-color: rgba(255, 255, 255, 0.5); margin-left: auto; border: 2px solid black;">
           Händlerstation
@@ -25,8 +26,9 @@
         <div style="width: 80%; display: flex; justify-content: center; align-items: center; border-radius: 0.75rem; background-color: rgba(255, 255, 255, 0.5); margin-right: auto; border: 2px solid black;">
           Goldschmiede
         </div>
-        <div style="grid-row: span 2; width: 80%; border-radius: 0.75rem; background-color: rgba(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center; margin-left: auto; border: 2px solid black;">
-          - 2 -
+        <div style="grid-row: span 2; width: 80%; border-radius: 0.75rem; background-color: rgba(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center; margin-left: auto; border: 2px solid black; text-align: center;">
+          Kriegsraum <br/>
+          - 1 -
         </div>
         <div style="width: 80%; display: flex; justify-content: center; align-items: center; border-radius: 0.75rem; background-color: rgba(255, 255, 255, 0.5); margin-right: auto; border: 2px solid black;">
           Arztkammer

@@ -39,7 +39,7 @@ export const PlayerCard = (props: {
   titles?: string[];
 }) => (
   <div
-    className="h-full min-h-full w-full overflow-hidden rounded-xl"
+    className="h-full min-h-full w-full overflow-hidden rounded-3xl inset-shadow-glass opacity-90"
     style={{
       backgroundImage: props.image ? `url(${props.image})` : "",
       backgroundSize: "contain",
@@ -48,7 +48,7 @@ export const PlayerCard = (props: {
       backgroundColor: "#111",
     }}
   >
-    <div className="h-full w-ful flex justify-end relative">
+    <div className="h-full w-ful flex justify-end relative rounded-3xl overflow-hidden inset-shadow-glass">
       <div className="absolute bg-linear-to-r from-black/0 via-black to-black right-0 top-0 bottom-0 left-1/4">
       </div>
       <div className="absolute top-0 right-0 bottom-0 flex h-full w-96 flex-col gap-2 overflow-hidden rounded-xl p-4 z-10">

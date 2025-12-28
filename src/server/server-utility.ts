@@ -7,12 +7,21 @@ import { CampaignState } from "@/types/CampaignState";
 
 const SERVER_STORAGE = "data/server.json";
 
-let __cache__serverStateLastUpdate = new Date().getTime();
-let __cache__campaignMetaLastUpdate = new Date().getTime();
-let __cache__campaignStateLastUpdate = new Date().getTime();
-let __cache__campaignMeta: CampaignMeta | undefined = undefined;
-let __cache__campaignState: CampaignState | undefined = undefined;
-let __cache__serverState: ServerState | undefined = undefined;
+declare global {
+  var __cache__serverStateLastUpdate : number | undefined;
+  var __cache__campaignMetaLastUpdate : number | undefined;
+  var __cache__campaignStateLastUpdate : number | undefined;
+  var __cache__campaignMeta: CampaignMeta | undefined;
+  var __cache__campaignState: CampaignState | undefined;
+  var __cache__serverState: ServerState | undefined;
+}
+
+global.__cache__serverStateLastUpdate ??= new Date().getTime();
+global.__cache__campaignMetaLastUpdate ??= new Date().getTime();
+global.__cache__campaignStateLastUpdate ??= new Date().getTime();
+global.__cache__campaignMeta ??= undefined;
+global.__cache__campaignState ??= undefined;
+global.__cache__serverState ??= undefined;
 
 export const loadCampaignState = async () => {
   if (__cache__campaignState) {
@@ -120,13 +129,13 @@ export const storeServerState = async (serverState: ServerState) => {
 };
 
 export const getServerStateLastUpdate = async () => {
-  return __cache__serverStateLastUpdate;
+  return __cache__serverStateLastUpdate ?? 0;
 };
 
 export const getCampaignMetaLastUpdate = async () => {
-  return __cache__campaignMetaLastUpdate;
+  return __cache__campaignMetaLastUpdate ?? 0
 };
 
 export const getCampaignStateLastUpdate = async () => {
-  return __cache__campaignStateLastUpdate;
+  return __cache__campaignStateLastUpdate ?? 0
 };

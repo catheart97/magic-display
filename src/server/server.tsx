@@ -34,11 +34,13 @@ export const getDiashowImages = async () => {
     "data/campaigns/" + serverState.campaign + "/diashow",
   );
   images = images.filter((image) => {
-    return image.toLowerCase().endsWith(".jpg");
+    return image.toLowerCase().endsWith(".jpg") || image.toLowerCase().endsWith(".png");
   });
+  // shuffle images
+  images.sort(() => Math.random() - 0.5);
   return images.map((image) => {
     return "data/campaigns/" + serverState.campaign + "/diashow/" + image;
-  });
+  })
 };
 
 const getMarkdownEntries = async (p: string) => {
@@ -112,7 +114,7 @@ export const updateCampaignState = async (state: Partial<CampaignState>) => {
 };
 
 export const fetchServerState = async () => {
-  const serverState = loadServerState();
+  const serverState = await loadServerState();
   return serverState;
 };
 

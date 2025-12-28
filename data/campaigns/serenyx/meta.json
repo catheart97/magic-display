@@ -1,6 +1,57 @@
 {
     "name": "Serenyx",
-    "players": [],
+    "players": [
+        {
+            "name": "Celya Shortbit",
+            "race": "Gnome",
+            "titles": [
+                "Meisterin der Alchemie"
+            ],
+            "class": "Artificer (Alchemist)",
+            "description": "Eine neugierige und wissbegierige Gnomin, die ihre Zeit damit verbringt, neue Tränke und Elixiere zu brauen.",
+            "image": "characters/celya-high.png"
+        },
+        {
+            "name": "Enesdra Nachtlied",
+            "race": "Mondelfe",
+            "titles": [
+                "Verführerin der Melodien"
+            ],
+            "class": "Bard (?)",
+            "description": "Eine geheimnisvolle Mondelfe mit einer tiefen Verbindung zur Natur und einer Leidenschaft für Musik und Geschichten.",
+            "image": "?"
+        },
+        {
+            "name": "Frankas Charakter",
+            "race": "?",
+            "titles": [
+                "?"
+            ],
+            "class": "Rogue (?)",
+            "description": "?",
+            "image": "?"
+        },
+        {
+            "name": "Sophies Charakter",
+            "race": "?",
+            "titles": [
+                "?"
+            ],
+            "class": "?",
+            "description": "?",
+            "image": "?"
+        },
+        {
+            "name": "Finns Charakter",
+            "race": "?",
+            "titles": [
+                "?"
+            ],
+            "class": "?",
+            "description": "?",
+            "image": "?"
+        }
+    ],
     "playerNPCs": [],
     "displayData": {
         "foregroundActives": {},
@@ -42,7 +93,7 @@
             "moons": [
                 {
                     "name": "Luna",
-                    "cycle": "350",
+                    "cycle": 350,
                     "cycle_rounding": "round",
                     "shift": 175,
                     "granularity": 40,
@@ -60,7 +111,39 @@
                 "crowding": 0
             },
             "seasons": {
-                "data": [],
+                "data": [
+                    {
+                        "name": "",
+                        "color": [
+                            "#979ce2",
+                            "#e5e5d8"
+                        ],
+                        "time": {
+                            "sunrise": {
+                                "hour": 6,
+                                "minute": 30
+                            },
+                            "sunset": {
+                                "hour": 21,
+                                "minute": 0
+                            }
+                        },
+                        "timespan": 2,
+                        "day": 22,
+                        "gradient": {
+                            "start": [
+                                236,
+                                56.4,
+                                73.9
+                            ],
+                            "end": [
+                                60,
+                                20,
+                                87.3
+                            ]
+                        }
+                    }
+                ],
                 "locations": [],
                 "global_settings": {
                     "season_offset": 0,

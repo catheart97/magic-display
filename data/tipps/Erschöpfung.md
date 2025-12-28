@@ -1,26 +1,16 @@
-<div class="h-full w-full flex flex-col text-2xl gap-3">
-    <div class="flex w-full gap-4 grow">
-        <div class="flex items-center justify-center p-4 w-16 rounded-full bg-french-900 text-french-100">1</div>
-        <span class="flex items-center justify-start grow">Nachteil auf Fertigkeitswürfe</span>
+<div class="h-full w-full flex flex-col text-2xl gap-6 justify-center">
+    <div class="flex justify-between items-center gap-5">
+      <div class="rounded-full w-32 h-32 bg-french-900 text-french-100 flex items-center justify-center text-3xl shrink-0">1&nbsp;-&nbsp;5</div>
+      <div class="grow h-32 flex items-center">
+        Jeder D20-Wurf wird um das 2-fache deiner Erschöpfungsstufe reduziert. <br/>
+        Deine Geschwindigkeit ist um das 5-fache deiner Erschöpfungsstufe reduziert (in ft).
+      </div>
     </div>
-    <div class="flex w-full gap-4 grow">
-        <div class="flex items-center justify-center p-4 w-16 rounded-full bg-french-900 text-french-100">2</div>
-        <span class="flex items-center justify-start grow">Halbierte Geschwindigkeit</span>
+    <div class="flex justify-between items-center gap-5">
+      <div class="rounded-full w-32 h-32 bg-french-900 text-french-100 flex items-center justify-center text-3xl shrink-0">&geq;&nbsp;6</div>
+      <div class="grow h-32 flex items-center">
+        Du stirbst.
+      </div>
     </div>
-    <div class="flex w-full gap-4 grow">
-        <div class="flex items-center justify-center p-4 w-16 rounded-full bg-french-900 text-french-100">3</div>
-        <span class="flex items-center justify-start grow">Nachteil auf Angriffs- & Rettungswürfe</span>
-    </div>
-    <div class="flex w-full gap-4 grow">
-        <div class="flex items-center justify-center p-4 w-16 rounded-full bg-french-900 text-french-100">4</div>
-        <span class="flex items-center justify-start grow">Halbierte HP</span>
-    </div>
-    <div class="flex w-full gap-4 grow">
-        <div class="flex items-center justify-center p-4 w-16 rounded-full bg-french-900 text-french-100">5</div>
-        <span class="flex items-center justify-start grow">Geschwindigkeit auf 0m</span>
-    </div>
-    <div class="flex w-full gap-4 grow">
-        <div class="flex items-center justify-center p-4 w-16 rounded-full bg-french-900 text-french-100">6</div>
-        <span class="flex items-center justify-start grow">Bewusstlos</span>
-    </div>
+    <div class="w-full text-center">Nach einer langen Rast wird 1 Stufe Erschöpfung entfernt.</div>
 </div>

@@ -118,8 +118,8 @@ export const Calendar = (props: { admin?: boolean }) => {
   const gen = new Prando(time.year + time.month + time.day);
 
   return (
-    <div className="flex w-full flex-col overflow-hidden rounded-xl bg-white">
-      <div className="flex w-full">
+    <div className="flex w-full flex-col overflow-hidden rounded-3xl">
+      <div className="flex w-full bg-white/90">
         <div className="flex h-20 w-3/4 flex-col">
           <div
             className={[
@@ -207,7 +207,7 @@ export const Calendar = (props: { admin?: boolean }) => {
             </div>
           </div>
         </div>
-        <div className="midnight flex h-20 items-center justify-center p-4">
+        <div className="midnight opacity-90 flex h-20 grow items-center justify-center p-4">
           {CAL.static_data.moons.map((_moon: any, i: number) => {
             const phaseProgress = getMoonCycleProgressForMoon(CAL, time, i);
             let phase = 0;
@@ -246,7 +246,7 @@ export const Calendar = (props: { admin?: boolean }) => {
         </div>
       </div>
 
-      <div className="flex w-full items-center justify-between gap-4 bg-french-900 p-4 font-bold text-french-400">
+      <div className="flex w-full items-center justify-between gap-4 bg-black/80 p-4 font-bold text-french-400">
         <span>
           {time.day}. {getMonthName(CAL, time.month)} {time.year}
         </span>

@@ -17,7 +17,7 @@ export const Tipp = (props: ITipp) => {
   return (
     <div
       className={
-        "h-full w-[inherit] overflow-hidden rounded-xl bg-white p-4 " +
+        "h-full w-[inherit] overflow-hidden rounded-3xl border-french-900 bg-white/80 backdrop-blur inset-shadow-glass p-4 " +
         props.className
       }
     >

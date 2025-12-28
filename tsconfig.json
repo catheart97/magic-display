@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -19,16 +23,36 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "#/*": ["./data/*"],
-      "src/*": ["./node_modules/5e-monster-maker/src/*"],
-      "app/*": ["./node_modules/5e-monster-maker/*"],
-      "components/*": ["./node_modules/5e-monster-maker/src/components/*"],
-      "layouts/*": ["./node_modules/5e-monster-maker/src/layouts/*"],
-      "pages/*": ["./node_modules/5e-monster-maker/src/pages/*"],
-      "assets/*": ["./node_modules/5e-monster-maker/src/assets/*"],
-      "boot/*": ["./node_modules/5e-monster-maker/src/boot/*"],
-      "stores/*": ["./node_modules/5e-monster-maker/src/stores/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "#/*": [
+        "./data/*"
+      ],
+      "src/*": [
+        "./node_modules/5e-monster-maker/src/*"
+      ],
+      "app/*": [
+        "./node_modules/5e-monster-maker/*"
+      ],
+      "components/*": [
+        "./node_modules/5e-monster-maker/src/components/*"
+      ],
+      "layouts/*": [
+        "./node_modules/5e-monster-maker/src/layouts/*"
+      ],
+      "pages/*": [
+        "./node_modules/5e-monster-maker/src/pages/*"
+      ],
+      "assets/*": [
+        "./node_modules/5e-monster-maker/src/assets/*"
+      ],
+      "boot/*": [
+        "./node_modules/5e-monster-maker/src/boot/*"
+      ],
+      "stores/*": [
+        "./node_modules/5e-monster-maker/src/stores/*"
+      ]
     }
   },
   "include": [
@@ -37,7 +61,10 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "scripts/create-schema.mjs",
-    "scripts/create-types-schema.ts"
+    "scripts/create-types-schema.ts",
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

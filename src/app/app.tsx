@@ -163,8 +163,10 @@ export default () => {
                 left: "52%",
               }}
             >
-              <div className="h-fit w-72">
-                <Calendar admin={false} />
+              <div className="w-fit h-fit border-[0.5px] border-white/80 rounded-3xl shadow-2xl inset-shadow-glass">
+                <div className="h-fit w-96 rounded-3xl">
+                  <Calendar admin={false} />
+                </div>
               </div>
             </div>
           )}
@@ -172,11 +174,11 @@ export default () => {
           <div
             className={
               "flex w-1/2 flex-col p-10 " +
-              (usePathOfHeroes ? "justify-start pr-26" : "justify-center")
+              (usePathOfHeroes ? "justify-start pr-26" : "justify-start")
             }
           >
-            <div className="relative h-fit">
-              <div className="aspect-square w-full" />
+            <div className="relative h-fit ">
+              <div className="aspect-square w-full inset-shadow-glass rounded-3xl" />
               {diashowImages.map((image, index) => {
                 const isPrev =
                   (diashowIndex - 1 + diashowImages.length) %
@@ -192,12 +194,12 @@ export default () => {
                   <div
                     key={index}
                     className={[
-                      "linear absolute top-0 right-0 bottom-0 left-0 transition-opacity duration-1000",
-                      index === diashowIndex ? "opacity-100" : "opacity-0",
+                      "linear absolute top-0 right-0 bottom-0 left-0 transition-opacity duration-1000 rounded-3xl backdrop-blur-3xl",
+                      index === diashowIndex ? "opacity-80" : "opacity-0",
                     ].join(" ")}
                   >
                     <PersistentImage
-                      className="aspect-1 w-full rounded-xl object-contain shadow-2xl shadow-black"
+                      className="aspect-1 w-full rounded-3xl object-contain shadow-2xl shadow-black"
                       src={"/api/image?fn=" + encodeURIComponent(image)}
                     />
                   </div>
@@ -220,7 +222,7 @@ export default () => {
         serverState?.preview?.data &&
         serverState?.preview?.data != "" ? (
           <SmartImageFill
-            className="rounded-xl"
+            className="rounded-2xl"
             src={serverState?.preview?.data}
           />
         ) : (
@@ -228,15 +230,23 @@ export default () => {
         )}
       </div>
 
+
+      <div className="absolute inset-0 bg-black/80 transition-opacity duration-1000 z-40 pointer-events-none" style={{
+        opacity: !isLoading && serverState?.preview?.type == "text" ? 1 : 0,
+      }}></div>
       <div
         className={[
-          "linear prose prose-lg prose-neutral prose-p:w-full absolute top-0 right-0 bottom-0 left-1/2 z-50 max-w-none rounded-l-xl bg-white p-8 transition-opacity duration-1000",
+          "linear prose prose-2xl prose-neutral flex items-center prose-p:w-full absolute top-0 right-0 bottom-0 left-1/2 z-50 max-w-none rounded-l-2xl bg-white p-8 transition-opacity duration-1000",
           !isLoading && serverState?.preview?.type == "text"
             ? "opacity-100"
             : "opacity-0",
         ].join(" ")}
       >
         <Markdown>{!isLoading ? serverState?.preview?.data : ""}</Markdown>
+      </div>
+
+      <div className="right-12 bottom-12 text-7xl text-french-100 z-50 absolute">
+        {(campaignMeta && !campaignMeta.map) && campaignMeta.name}
       </div>
 
       <Battlemap />

@@ -15,7 +15,7 @@
       <li>Dauer: 8 Stunden</li>
       <li>Nur einmal pro Tag</li>
       <li>Volle HP-Regeneration</li>
-      <li>Hälfte der Trefferwürfel werden regeneriert</li>
+      <li>Trefferwürfel werden regeneriert</li>
     </ul>
   </div>
   </div>
