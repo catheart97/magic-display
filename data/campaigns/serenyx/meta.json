@@ -9,27 +9,27 @@
             ],
             "class": "Artificer (Alchemist)",
             "description": "Eine neugierige und wissbegierige Gnomin, die ihre Zeit damit verbringt, neue Tränke und Elixiere zu brauen.",
-            "image": "characters/celya-high.png"
+            "image": "characters/Celya_Shortbit-Portrait.png"
         },
         {
-            "name": "Enesdra Nachtlied",
-            "race": "Mondelfe",
+            "name": "Enesdra (Orpes) Nachtlied",
+            "race": "Moonelf",
             "titles": [
                 "Verführerin der Melodien"
             ],
-            "class": "Bard (?)",
-            "description": "Eine geheimnisvolle Mondelfe mit einer tiefen Verbindung zur Natur und einer Leidenschaft für Musik und Geschichten.",
-            "image": "?"
+            "class": "Bard (College of Glamour)",
+            "description": "Eine geheimnisvolle Mondelfe mit einer tiefen Verbindung zur Musik. Ihre Lieder können Herzen berühren und Seelen heilen. Redselig ist sie allerdings nicht.",
+            "image": "characters/Enesdra-Portrait.png"
         },
         {
-            "name": "Frankas Charakter",
-            "race": "?",
+            "name": "Ezra Yaris",
+            "race": "Leonin",
             "titles": [
-                "?"
+                "Die Trickreiche"
             ],
-            "class": "Rogue (?)",
-            "description": "?",
-            "image": "?"
+            "class": "Rogue (Arcane Trickster)",
+            "description": "Eine geschickte und geheimnisvolle Leonin, die ihre Fähigkeiten im Schleichen und Täuschen perfektioniert hat. Sie ist bekannt für ihre cleveren Pläne und ihren scharfen Verstand.",
+            "image": "characters/Ezra_Disguise-Portrait-3.png"
         },
         {
             "name": "Sophies Charakter",
@@ -43,6 +43,16 @@
         },
         {
             "name": "Finns Charakter",
+            "race": "?",
+            "titles": [
+                "?"
+            ],
+            "class": "?",
+            "description": "?",
+            "image": "?"
+        },
+        {
+            "name": "Kathas Charakter",
             "race": "?",
             "titles": [
                 "?"
