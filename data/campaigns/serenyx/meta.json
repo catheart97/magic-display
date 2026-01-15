@@ -341,5 +341,9 @@
             }
         ],
         "categories": []
+    },
+    "map": {
+        "image": "map.png",
+        "heroPath": "map.svg"
     }
 }
