@@ -32,32 +32,32 @@
             "image": "characters/Ezra_Disguise-Portrait-3.png"
         },
         {
-            "name": "Sophies Charakter",
-            "race": "?",
+            "name": "Elunan Silpatte",
+            "race": "Wolfborn",
             "titles": [
                 "?"
             ],
-            "class": "?",
+            "class": "Druid (Circle of the Moon)",
             "description": "?",
-            "image": "?"
+            "image": "characters/P-H-Elunan.png"
         },
         {
-            "name": "Finns Charakter",
-            "race": "?",
+            "name": "Art Candela",
+            "race": "Mondelf",
             "titles": [
-                "?"
+                "Meisterjäger"
             ],
-            "class": "?",
-            "description": "?",
-            "image": "?"
+            "class": "Ranger (Hunter)",
+            "description": "Ein Mondelf mit großem Talent für die Jagd und das Überleben in der Wildnis. Er ist ein erfahrener Fährtenleser und Schütze, der seine Fähigkeiten nutzt, um seine Gefährten zu schützen.",
+            "image": "characters/P-H-Art.png"
         },
         {
-            "name": "Kathas Charakter",
-            "race": "?",
+            "name": "???",
+            "race": "Human",
             "titles": [
-                "?"
+                "Geist"
             ],
-            "class": "?",
+            "class": "Sourcerer (Wild Magic)",
             "description": "?",
             "image": "?"
         }
