@@ -248,7 +248,8 @@ export const Calendar = (props: { admin?: boolean }) => {
 
       <div className="flex w-full items-center justify-between gap-4 bg-black/80 p-4 font-bold text-french-400">
         <span>
-          {time.day}. {getMonthName(CAL, time.month)} {time.year}
+          {time.day}. {getMonthName(CAL, time.month)} 
+           {/* {time.year} */}
         </span>
         <span>{getWeekdayName(CAL, time)}</span>
         {props.admin ? (
