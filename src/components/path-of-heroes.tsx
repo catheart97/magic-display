@@ -105,24 +105,6 @@ export const PathOfHeros = () => {
         ) : (
           <img
             src={
-              "/api/image?fn=" +
-              encodeURIComponent(
-                "data/campaigns/" +
-                  serverState!.campaign +
-                  "/" +
-                  campaignMeta!.map!.image,
-              )
-            }
-            className="h-full w-full"
-            alt="Karte"
-          ></img>
-        )}
-
-        {serverStateLoading || campaignMetaLoading ? (
-          <></>
-        ) : (
-          <img
-            src={
               "/api/svg?fn=" +
               encodeURIComponent(
                 "data/campaigns/" +
@@ -137,7 +119,7 @@ export const PathOfHeros = () => {
         )}
       </div>
       <div
-        className="absolute bottom-4 left-4 text-xl font-bold uppercase"
+        className="absolute bottom-4 right-4 text-xl font-bold uppercase"
         style={{
           filter: "drop-shadow(0 25px 25px rgb(1 1 1 / 0.15))",
         }}

@@ -42,20 +42,20 @@
             "image": "characters/P-H-Elunan.png"
         },
         {
-            "name": "Finns Charakter",
-            "race": "?",
+            "name": "Art Candela",
+            "race": "Mondelf",
             "titles": [
-                "?"
+                "Meisterjäger"
             ],
             "class": "Ranger (Hunter)",
-            "description": "?",
-            "image": "?"
+            "description": "Ein Mondelf mit großem Talent für die Jagd und das Überleben in der Wildnis. Er ist ein erfahrener Fährtenleser und Schütze, der seine Fähigkeiten nutzt, um seine Gefährten zu schützen.",
+            "image": "characters/P-H-Art.png"
         },
         {
-            "name": "Kathas Charakter",
-            "race": "?",
+            "name": "???",
+            "race": "Human",
             "titles": [
-                "?"
+                "Geist"
             ],
             "class": "Sourcerer (Wild Magic)",
             "description": "?",
@@ -341,5 +341,9 @@
             }
         ],
         "categories": []
+    },
+    "map": {
+        "image": "map.png",
+        "heroPath": "map.svg"
     }
 }
